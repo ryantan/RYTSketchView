@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'RYTSketchView_Example', :exclusive => true do
+  pod "RYTSketchView", :path => "../"
+end
+
+target 'RYTSketchView_Tests', :exclusive => true do
+  pod "RYTSketchView", :path => "../"
+
+  
+end
