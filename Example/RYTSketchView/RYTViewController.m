@@ -14,7 +14,7 @@
 
 @interface RYTViewController () {
     
-    UIScrollView *scrollView;
+    UIScrollView *_scrollView;
     RYTSketchView *sketchView;
     RYTJoystickView *joystickView;
     
@@ -61,51 +61,54 @@
     // Test multi touch
     //self.view.multipleTouchEnabled = TRUE;
     
-    
-    sketchView =[[RYTSketchView alloc]initWithFrame:self.view.bounds];
-    sketchView.delegate = self;
-    
-    
     self.penButton.alpha = 1.0;
     self.redPenButton.alpha = 0.2;
     self.eraserButton.alpha = 0.2;
-    sketchView.zoomEnabled = YES;
-    sketchView.shouldStoreHistory = YES;
+    
     
     //Init scroll view
     CGRect scrollFrame;
-    //scrollFrame= CGRectMake(0, 0, SCREEN_WIDTH, 911);
     //scrollFrame = CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_HEIGHT);
-    scrollFrame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    scrollFrame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
     NSLog(@"scrollFrame=%@", NSStringFromCGRect(scrollFrame));
     
-    scrollView = [[UIScrollView alloc] initWithFrame:scrollFrame];
-    scrollView.delegate = self;
-    scrollView.tag = 836913;
-    scrollView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
-    scrollView.pagingEnabled = NO; //do not snap to multiples of ZoomScale and position
-    scrollView.scrollEnabled = FALSE; // Diable one-finger scrolling
-    scrollView.minimumZoomScale = 1.0;
-    scrollView.maximumZoomScale = scrollView.minimumZoomScale;
-    scrollView.multipleTouchEnabled = TRUE;
-    scrollView.zoomScale = scrollView.minimumZoomScale;
-    
+    _scrollView = [[UIScrollView alloc] initWithFrame:scrollFrame];
+    _scrollView.delegate = self;
+    _scrollView.tag = 836913;
+    _scrollView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
+    _scrollView.pagingEnabled = NO; //do not snap to multiples of ZoomScale and position
+    _scrollView.scrollEnabled = FALSE; // Diable one-finger scrolling
+    _scrollView.minimumZoomScale = 1.0;
+    _scrollView.maximumZoomScale = _scrollView.minimumZoomScale;
+    _scrollView.multipleTouchEnabled = TRUE;
+    _scrollView.zoomScale = _scrollView.minimumZoomScale;
+
+    CGRect sketchFrame = (CGRect){
+        .origin = CGPointZero,
+        .size = scrollFrame.size
+    };
+    sketchView = [[RYTSketchView alloc]initWithFrame:sketchFrame];
+    sketchView.delegate = self;
+    sketchView.zoomEnabled = YES;
+    sketchView.shouldStoreHistory = YES;
     
     // Enable zooming
     if (sketchView.zoomEnabled){
-        scrollView.showsHorizontalScrollIndicator = TRUE;
-        scrollView.showsVerticalScrollIndicator = TRUE;
-        scrollView.maximumZoomScale = 3.0;
+        _scrollView.showsHorizontalScrollIndicator = TRUE;
+        _scrollView.showsVerticalScrollIndicator = TRUE;
+        _scrollView.minimumZoomScale = self.zoomSlider.minimumValue;
+        _scrollView.maximumZoomScale = self.zoomSlider.maximumValue;
+        self.zoomSlider.value = 1.0;
     }
     
     //test, block 2 finger pan
     /*UIPanGestureRecognizer *twoFingerPan = [[UIPanGestureRecognizer alloc] init];
      twoFingerPan.minimumNumberOfTouches = 2;
      twoFingerPan.maximumNumberOfTouches = 2;
-     [scrollView addGestureRecognizer:twoFingerPan];*/
+     [_scrollView addGestureRecognizer:twoFingerPan];*/
     
-    for (UIGestureRecognizer* recognizer in [scrollView gestureRecognizers]) {
-        //[scrollView removeGestureRecognizer:recognizer];
+    for (UIGestureRecognizer* recognizer in [_scrollView gestureRecognizers]) {
+        //[_scrollView removeGestureRecognizer:recognizer];
         /*if ([recognizer isKindOfClass:[UIPinchGestureRecognizer class]]) {
          [recognizer setEnabled:NO];
          }*/
@@ -113,47 +116,40 @@
     }
     
     // Add sub views
-    [scrollView insertSubview:sketchView atIndex:0];
-    [_sketchViewWrapper insertSubview:scrollView atIndex:0];
+    [_scrollView insertSubview:sketchView atIndex:0];
+    [_sketchViewWrapper insertSubview:_scrollView atIndex:0];
     
     // Debug: check view hierarchy
     //[self.view printSubviewsWithIndentation:0];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"viewWillAppear");
-    
-    
-    // hide previously opened sketch if required
-    //if (should_reset_sketch){
-    //    [theSketchView resetView];
-    //}
     
     [self layoutSubviewsCustom];
     
     // Pass message on to view
     [sketchView viewWillAppear];
     
-    // register for keyboard notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
+    // Register for keyboard notifications.
+    // Deprecated, was used for the text tool.
+    //[[NSNotificationCenter defaultCenter] addObserver:self
+    //                                         selector:@selector(keyboardWillShow:)
+    //                                             name:UIKeyboardWillShowNotification
+    //                                           object:nil];
+    //
+    //[[NSNotificationCenter defaultCenter] addObserver:self
+    //                                         selector:@selector(keyboardWillHide:)
+    //                                             name:UIKeyboardWillHideNotification
+    //                                           object:nil];
     
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     NSLog(@"SketchViewController.willAnimateRotationToInterfaceOrientation:(%@)duration:(%f)", (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)?@"Portrait":@"Landscape"), duration);
     [self layoutSubviewsCustomForOrientation:toInterfaceOrientation];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -223,7 +219,7 @@
 
 - (void)joystick:(RYTJoystickView *)joystick moved:(CGPoint)delta{
     
-    if (scrollView.zoomScale == 1.0){
+    if (_scrollView.zoomScale == 1.0){
         //ignore
         return;
     }
@@ -231,20 +227,20 @@
     
     CGPoint offset;
     if (UIInterfaceOrientationIsPortrait([self interfaceOrientation])){
-        if ((scrollView.contentSize.width < SCREEN_WIDTH) || (scrollView.contentSize.height < 861)){
+        if ((_scrollView.contentSize.width < SCREEN_WIDTH) || (_scrollView.contentSize.height < 861)){
             //ignore
             return;
         }
-        offset = CGPointMake(delta.x * (scrollView.contentSize.width-SCREEN_WIDTH), delta.y * (scrollView.contentSize.height-861));
+        offset = CGPointMake(delta.x * (_scrollView.contentSize.width-SCREEN_WIDTH), delta.y * (_scrollView.contentSize.height-861));
     }else {
-        if ((scrollView.contentSize.width < SCREEN_HEIGHT) || (scrollView.contentSize.height < 605)){
+        if ((_scrollView.contentSize.width < SCREEN_HEIGHT) || (_scrollView.contentSize.height < 605)){
             //ignore
             return;
         }
-        offset = CGPointMake(delta.x * (scrollView.contentSize.width-SCREEN_HEIGHT), delta.y * (scrollView.contentSize.height-605));
+        offset = CGPointMake(delta.x * (_scrollView.contentSize.width-SCREEN_HEIGHT), delta.y * (_scrollView.contentSize.height-605));
     }
     NSLog(@"offset=%@", NSStringFromCGPoint(offset));
-    scrollView.contentOffset = offset;
+    _scrollView.contentOffset = offset;
 }
 
 
@@ -254,13 +250,13 @@
 
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer translation:(CGPoint)translation{
     NSLog(@"SketchViewController.handlePan, translation=%@", NSStringFromCGPoint(translation));
-    //scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x+translation.x, scrollView.contentOffset.y+translation.y);
+    //_scrollView.contentOffset = CGPointMake(_scrollView.contentOffset.x+translation.x, _scrollView.contentOffset.y+translation.y);
     
     if (recognizer.state == UIGestureRecognizerStateBegan){
         startPanLocaton = translation;
     }else if (recognizer.state == UIGestureRecognizerStateEnded){
     }else{
-        scrollView.contentOffset = CGPointMake(-translation.x, -translation.y);
+        _scrollView.contentOffset = CGPointMake(-translation.x, -translation.y);
     }
 }
 
@@ -272,34 +268,34 @@
     
     if (phase == 1){
         //startPanDist = ((p2.x-p1.x)*(p2.x-p1.x))+((p2.y-p1.y)*(p2.y-p1.y));
-        //startZoomScale = scrollView.zoomScale;
+        //startZoomScale = _scrollView.zoomScale;
         startPanLocaton = center;
         //NSLog(@"\tstartPanLocaton=%@", NSStringFromCGPoint(startPanLocaton));
-        startContentOffset = scrollView.contentOffset;
+        startContentOffset = _scrollView.contentOffset;
         //NSLog(@"\tstartContentOffset=%@", NSStringFromCGPoint(startContentOffset));
     }else if (phase == 2){
         //CGFloat currDist = ((p2.x-p1.x)*(p2.x-p1.x))+((p2.y-p1.y)*(p2.y-p1.y));
         //CGFloat scaleDelta = sqrt(currDist/startPanDist);
-        //scrollView.zoomScale = startZoomScale * scaleDelta;
+        //_scrollView.zoomScale = startZoomScale * scaleDelta;
         
         CGFloat targetOffsetX = startPanLocaton.x-center.x+startContentOffset.x;
         CGFloat targetOffsetY = startPanLocaton.y-center.y+startContentOffset.y;
         //NSLog(@"\ttargetOffset=%@", NSStringFromCGPoint(CGPointMake(targetOffsetX, targetOffsetY)));
         
         //Prevent from moving off screen
-        if (targetOffsetX > (scrollView.contentSize.width - SketchViewMinBorderForPan)){
-            targetOffsetX = scrollView.contentSize.width - SketchViewMinBorderForPan;
+        if (targetOffsetX > (_scrollView.contentSize.width - SketchViewMinBorderForPan)){
+            targetOffsetX = _scrollView.contentSize.width - SketchViewMinBorderForPan;
         }else if (targetOffsetX < -self.view.frame.size.width + SketchViewMinBorderForPan) {
             targetOffsetX = -self.view.frame.size.width + SketchViewMinBorderForPan;
         }
         
-        if (targetOffsetY > (scrollView.contentSize.height-SketchViewMinBorderForPan)){
-            targetOffsetY = scrollView.contentSize.height-SketchViewMinBorderForPan;
+        if (targetOffsetY > (_scrollView.contentSize.height-SketchViewMinBorderForPan)){
+            targetOffsetY = _scrollView.contentSize.height-SketchViewMinBorderForPan;
         }else if (targetOffsetY < -self.view.frame.size.height + SketchViewMinBorderForPan) {
             targetOffsetY = -self.view.frame.size.height + SketchViewMinBorderForPan;
         }
-        scrollView.contentOffset = CGPointMake(targetOffsetX, targetOffsetY);
-        //NSLog(@"\tscrollView.contentOffset=%@", NSStringFromCGPoint(scrollView.contentOffset));
+        _scrollView.contentOffset = CGPointMake(targetOffsetX, targetOffsetY);
+        //NSLog(@"\t_scrollView.contentOffset=%@", NSStringFromCGPoint(_scrollView.contentOffset));
     }
     
     
@@ -307,7 +303,7 @@
 }
 
 - (UIView *)viewForTouch{
-    //return scrollView;
+    //return _scrollView;
     return self.view;
 }
 
@@ -321,23 +317,23 @@
 - (void)zoomInToPoint:(CGPoint)point{
     //TODO: Set proper contentOffset
     [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        if (scrollView.zoomScale > 1){
-            scrollView.contentOffset = CGPointZero;
-            scrollView.zoomScale = 1;
+        if (_scrollView.zoomScale > 1){
+            _scrollView.contentOffset = CGPointZero;
+            _scrollView.zoomScale = 1;
         }else{
             
             //CGRect contentFrame = self.currentSketchView.frame;
             CGRect bounds = self.view.bounds;
-            CGFloat newZoom = scrollView.maximumZoomScale;
+            CGFloat newZoom = _scrollView.maximumZoomScale;
             
             //NSLog(@"contentFrame=%@, bounds=%@", NSStringFromCGRect(contentFrame), NSStringFromCGRect(bounds));
             
-            //scrollView.contentOffset = CGPointMake((point.x * newZoom) - (bounds.size.width/2), (point.y * newZoom) - (bounds.size.height/2));
-            //scrollView.contentOffset = CGPointMake(50, 50);
-            //scrollView.contentOffset = CGPointMake(point.x/newZoom, point.y/newZoom);
-            scrollView.contentOffset = CGPointMake((point.x) - (bounds.size.width/2), (point.y) - (bounds.size.height/2));
-            //NSLog(@"new offset = %@", NSStringFromCGPoint(scrollView.contentOffset));
-            scrollView.zoomScale = newZoom;
+            //_scrollView.contentOffset = CGPointMake((point.x * newZoom) - (bounds.size.width/2), (point.y * newZoom) - (bounds.size.height/2));
+            //_scrollView.contentOffset = CGPointMake(50, 50);
+            //_scrollView.contentOffset = CGPointMake(point.x/newZoom, point.y/newZoom);
+            _scrollView.contentOffset = CGPointMake((point.x) - (bounds.size.width/2), (point.y) - (bounds.size.height/2));
+            //NSLog(@"new offset = %@", NSStringFromCGPoint(_scrollView.contentOffset));
+            _scrollView.zoomScale = newZoom;
         }
     } completion:^(BOOL finished) {
         //do nothing
@@ -468,8 +464,10 @@
 
 - (void)zoomAccordingToSliderZoom{
     //NSLog(@"zoomAccordingToSliderZoom, zoomSlider.value=%f", _zoomSlider.value);
-    scrollView.zoomScale = ((scrollView.maximumZoomScale-scrollView.minimumZoomScale) * self.zoomSlider.value) + scrollView.minimumZoomScale;
-    [scrollView flashScrollIndicators];
+    //_scrollView.zoomScale = ((_scrollView.maximumZoomScale-_scrollView.minimumZoomScale) * self.zoomSlider.value) + _scrollView.minimumZoomScale;
+    //NSLog(@"_scrollView.zoomScale: %f", _scrollView.zoomScale);
+    _scrollView.zoomScale = _zoomSlider.value;
+    [_scrollView flashScrollIndicators];
 }
 
 
@@ -493,7 +491,7 @@
     // Using scrollview
     float zoomScale = 1.0;
     
-    // NOTE: sketchView frames doesn't change. The zoom of scrollView does
+    // NOTE: sketchView frames doesn't change. The zoom of _scrollView does
     
     
     /* Causes blurring.
@@ -560,12 +558,12 @@
     NSLog(@"zoomScale = %f", zoomScale);
     
     // init scrollView
-    scrollView.contentSize = sketchView.bounds.size;
-    scrollView.minimumZoomScale = zoomScale;
-    scrollView.maximumZoomScale = zoomScale * (sketchView.zoomEnabled ? 4 : 1);
+    _scrollView.contentSize = sketchView.bounds.size;
+    _scrollView.minimumZoomScale = zoomScale;
+    _scrollView.maximumZoomScale = zoomScale * (sketchView.zoomEnabled ? 4 : 1);
     
-    [scrollView setZoomScale:zoomScale animated:TRUE];
-    [scrollView setContentOffset:CGPointMake(0, 0) animated:TRUE];
+    [_scrollView setZoomScale:zoomScale animated:TRUE];
+    [_scrollView setContentOffset:CGPointMake(0, 0) animated:TRUE];
     
     
     NSLog(@"zoomScale = %f", zoomScale);
@@ -584,8 +582,8 @@
     [self autoHideJoystick];
     
     
-    for (UIGestureRecognizer* recognizer in [scrollView gestureRecognizers]) {
-        //[scrollView removeGestureRecognizer:recognizer];
+    for (UIGestureRecognizer* recognizer in [_scrollView gestureRecognizers]) {
+        //[_scrollView removeGestureRecognizer:recognizer];
         //if ([recognizer isKindOfClass:[UIPinchGestureRecognizer class]]) {
         //  [recognizer setEnabled:NO];
         //}
@@ -594,7 +592,7 @@
     
     // @TODO: Test
     // Reset this here to test if affects blurring
-    //scrollView.frame = CGRectMake(0, 50, 1024, 1024);
+    //_scrollView.frame = CGRectMake(0, 50, 1024, 1024);
     
     // DEBUG:
     NSLog(@"sketchView.transform = %@", NSStringFromCGAffineTransform(sketchView.transform));
@@ -604,7 +602,7 @@
 
 
 - (void)autoHideJoystick{
-    if ((scrollView.contentSize.width > (scrollView.frame.size.width+10)) || (scrollView.contentSize.height > (scrollView.frame.size.height+10))){
+    if ((_scrollView.contentSize.width > (_scrollView.frame.size.width+10)) || (_scrollView.contentSize.height > (_scrollView.frame.size.height+10))){
         joystickView.alpha=1;
     }else{
         joystickView.alpha = 0.3;

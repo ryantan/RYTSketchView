@@ -903,41 +903,18 @@ static UIImage *_clipboardContent = nil;
     
     
     // Use another draw method if tool is eraser.
-    if (_currentTool == RYTSketchToolTypeEraser){
-        [self drawRectWithExtraContext:rect inContext:context];
-    }else{
-        [self drawRectWithSameContext:rect inContext:context];
-    }
+//    if (_currentTool == RYTSketchToolTypeEraser){
+//        [self drawRectWithExtraContext:rect inContext:context];
+//    }else{
+//        [self drawRectWithSameContext:rect inContext:context];
+//    }
+
+    [self drawRectWithExtraContext:rect inContext:context];
     
     //Debug: Write out context to test
-    [RYTSketchViewUtils writeCGContext:context toFileName:@"context_end.png"];
+    //[RYTSketchViewUtils writeCGContext:context toFileName:@"context_end.png"];
     
-}
-
-// Draw method for "normal" tools like pen.
-- (void)drawRectWithSameContext:(CGRect)rect inContext:(CGContextRef)context {
     
-    CGRect fullRect = CGRectMake(0, 0, _bufferWidth, _bufferHeight);
-    
-    if(flattenedImage_){
-        //unsigned long flattenedImageWidth = CGImageGetWidth(flattenedImage_);
-        //unsigned long flattenedImageHeight = CGImageGetHeight(flattenedImage_);
-        //NSLog(@"flattenedImageWidth: %lu, flattenedImageHeight: %lu", flattenedImageWidth, flattenedImageHeight);
-        CGContextDrawImage(context, fullRect, flattenedImage_);
-    }
-    
-    // Draw all the finished strokes.
-    //NSLog(@"drawRectWithSameContext, finishedStrokes.count = %lu", (unsigned long)finishedStrokes.count);
-    for (Stroke *stroke in finishedStrokes){
-        [self drawStroke:stroke inContext:context];
-    }
-    
-    // Draw all the currently active strokes.
-    //NSLog(@"drawRectWithSameContext, strokes.count = %lu", (unsigned long)strokes.count);
-    for (NSString *key in strokes){
-        Stroke *stroke = [strokes valueForKey:key];
-        [self drawStroke:stroke inContext:context];
-    }
     
     if (_currentTool == RYTSketchToolTypeMarquee){
         if (marqueeDrawn){
@@ -955,7 +932,48 @@ static UIImage *_clipboardContent = nil;
     }
 }
 
-// Draw method for eraser.
+// Draw method for "normal" tools like pen.
+// Deprecated. All tools use this now so that we don't draw strokes that are
+// too smooth when zoomed in. i.e. always back our drawing with an off-screen
+// context.
+//- (void)drawRectWithSameContext:(CGRect)rect inContext:(CGContextRef)context {
+//    
+//    CGRect fullRect = CGRectMake(0, 0, _bufferWidth, _bufferHeight);
+//    
+//    if(flattenedImage_){
+//        //unsigned long flattenedImageWidth = CGImageGetWidth(flattenedImage_);
+//        //unsigned long flattenedImageHeight = CGImageGetHeight(flattenedImage_);
+//        //NSLog(@"flattenedImageWidth: %lu, flattenedImageHeight: %lu", flattenedImageWidth, flattenedImageHeight);
+//        CGContextDrawImage(context, fullRect, flattenedImage_);
+//    }
+//    
+//    
+//    [self ensureStrokesContext];
+//    CGContextClearRect(strokesContext, fullRect);
+//    
+//    // Draw all the finished strokes.
+//    //NSLog(@"drawRectWithSameContext, finishedStrokes.count = %lu", (unsigned long)finishedStrokes.count);
+//    for (Stroke *stroke in finishedStrokes){
+//        [self drawStroke:stroke inContext:strokesContext];
+//    }
+//    
+//    // Draw all the currently active strokes.
+//    //NSLog(@"drawRectWithSameContext, strokes.count = %lu", (unsigned long)strokes.count);
+//    for (NSString *key in strokes){
+//        Stroke *stroke = [strokes valueForKey:key];
+//        [self drawStroke:stroke inContext:strokesContext];
+//    }
+//    
+//    CGImageRelease(strokesImage);
+//    strokesImage = CGBitmapContextCreateImage(strokesContext);
+//    if(strokesImage){
+//        CGContextDrawImage(context, fullRect, strokesImage);
+//    }
+//    
+//}
+
+// Draw method that draw new strokes on a separate buffer before drawing on
+// current context.
 - (void)drawRectWithExtraContext:(CGRect)rect inContext:(CGContextRef)context {
     
     // Define rect

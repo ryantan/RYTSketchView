@@ -96,7 +96,7 @@
                                     <action selector="sketchActionsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="aKC-O1-l4d"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-xx-mEL" userLabel="Zoom Slider">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-xx-mEL" userLabel="Zoom Slider">
                                 <rect key="frame" x="104" y="26" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="186" id="OGo-n1-3mv"/>
