@@ -22,6 +22,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7A99620A760C5DA47150FE9D /* Pods_RYTSketchView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EC0E2DBF46FF24CE212790 /* Pods_RYTSketchView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		940C56761B353E5800C430FA /* SketchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940C56741B353E5800C430FA /* SketchViewController.xib */; };
+		940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */; };
+		940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */; };
+		940C56EC1B363B8C00C430FA /* UIView+printSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */; };
 		B65D1B92084E24088828D9BE /* Pods_RYTSketchView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A9311D61FB7E3F0BF21625 /* Pods_RYTSketchView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,7 +43,7 @@
 		0124F29312128EC5C9BA23B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0BAD333AC4C378842FC7E320 /* Pods-RYTSketchView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		193203D80E380C7759C6BA43 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* RYTSketchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = RYTSketchView.app; path = RYTSketchView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* RYTSketchView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTSketchView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -52,7 +56,7 @@
 		6003F5A5195388D20070C39A /* RYTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* RYTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = RYTSketchView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* RYTSketchView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYTSketchView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -63,6 +67,16 @@
 		68A9311D61FB7E3F0BF21625 /* Pods_RYTSketchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EC0E2DBF46FF24CE212790 /* Pods_RYTSketchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		940C56721B353E5800C430FA /* SketchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewController.h; sourceTree = "<group>"; };
+		940C56731B353E5800C430FA /* SketchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewController.m; sourceTree = "<group>"; };
+		940C56741B353E5800C430FA /* SketchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SketchViewController.xib; sourceTree = "<group>"; };
+		940C56771B35566500C430FA /* RYTSketchOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchOptionsViewController.h; sourceTree = "<group>"; };
+		940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTSketchOptionsViewController.m; sourceTree = "<group>"; };
+		940C56A81B3575F200C430FA /* RYTSketchPenOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchPenOptionsViewController.h; sourceTree = "<group>"; };
+		940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTSketchPenOptionsViewController.m; sourceTree = "<group>"; };
+		940C56AB1B357BF000C430FA /* RYTPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTPopoverDelegate.h; sourceTree = "<group>"; };
+		940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+printSubviews.h"; sourceTree = "<group>"; };
+		940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+printSubviews.m"; sourceTree = "<group>"; };
 		98354C1EB2A3D8672DFC9181 /* RYTSketchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RYTSketchView.podspec; path = ../RYTSketchView.podspec; sourceTree = "<group>"; };
 		ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +122,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* RYTSketchView.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* RYTSketchView_Example.app */,
+				6003F5AE195388D20070C39A /* RYTSketchView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,13 +144,24 @@
 		6003F593195388D20070C39A /* Example for RYTSketchView */ = {
 			isa = PBXGroup;
 			children = (
+				940C567B1B3574E700C430FA /* assets */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* RYTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RYTAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				940C56AB1B357BF000C430FA /* RYTPopoverDelegate.h */,
+				940C56771B35566500C430FA /* RYTSketchOptionsViewController.h */,
+				940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */,
+				940C56A81B3575F200C430FA /* RYTSketchPenOptionsViewController.h */,
+				940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */,
 				6003F5A5195388D20070C39A /* RYTViewController.h */,
 				6003F5A6195388D20070C39A /* RYTViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				940C56721B353E5800C430FA /* SketchViewController.h */,
+				940C56731B353E5800C430FA /* SketchViewController.m */,
+				940C56741B353E5800C430FA /* SketchViewController.xib */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */,
+				940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */,
 			);
 			name = "Example for RYTSketchView";
 			path = RYTSketchView;
@@ -193,6 +218,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		940C567B1B3574E700C430FA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,7 +245,7 @@
 			);
 			name = RYTSketchView_Example;
 			productName = RYTSketchView;
-			productReference = 6003F58A195388D20070C39A /* RYTSketchView.app */;
+			productReference = 6003F58A195388D20070C39A /* RYTSketchView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* RYTSketchView_Tests */ = {
@@ -234,7 +266,7 @@
 			);
 			name = RYTSketchView_Tests;
 			productName = RYTSketchViewTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* RYTSketchView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,6 +310,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				940C56761B353E5800C430FA /* SketchViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,9 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940C56EC1B363B8C00C430FA /* UIView+printSubviews.m in Sources */,
 				6003F59E195388D20070C39A /* RYTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RYTViewController.m in Sources */,
+				940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +502,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -499,7 +535,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -510,12 +547,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66C1F09873E19C2088B7E37B /* Pods-RYTSketchView_Example.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RYTSketchView/RYTSketchView-Prefix.pch";
 				INFOPLIST_FILE = "RYTSketchView/RYTSketchView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -525,12 +565,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RYTSketchView/RYTSketchView-Prefix.pch";
 				INFOPLIST_FILE = "RYTSketchView/RYTSketchView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,0 +1,17 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - RYTSketchView (0.1.0):
+    - MBProgressHUD (~> 0.5)
+
+DEPENDENCIES:
+  - RYTSketchView (from `../`)
+
+EXTERNAL SOURCES:
+  RYTSketchView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  RYTSketchView: e71b92528417b98a3d139fe138198710aa1397fc
+
+COCOAPODS: 0.37.2

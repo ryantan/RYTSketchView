@@ -7,6 +7,4 @@ end
 
 target 'RYTSketchView_Tests', :exclusive => true do
   pod "RYTSketchView", :path => "../"
-
-  
 end

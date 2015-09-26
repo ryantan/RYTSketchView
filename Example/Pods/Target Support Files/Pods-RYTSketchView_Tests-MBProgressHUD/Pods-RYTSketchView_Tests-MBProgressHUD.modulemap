@@ -1,0 +1,6 @@
+framework module MBProgressHUD {
+  umbrella header "Pods-RYTSketchView_Tests-MBProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}

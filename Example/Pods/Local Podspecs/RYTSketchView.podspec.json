@@ -1,0 +1,32 @@
+{
+  "name": "RYTSketchView",
+  "version": "0.1.0",
+  "summary": "A short description of RYTSketchView.",
+  "description": "                       An optional longer description of RYTSketchView\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RYTSketchView",
+  "license": "MIT",
+  "authors": {
+    "Ryan": "ryan@redairship.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RYTSketchView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RYTSketchView": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "ios": {
+    "dependencies": {
+      "MBProgressHUD": [
+        "~> 0.5"
+      ]
+    }
+  }
+}

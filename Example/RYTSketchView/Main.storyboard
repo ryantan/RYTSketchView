@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,147 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8O-Ci-zlA" userLabel="Button - Undo">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="0h2-XE-4rJ"/>
+                                    <constraint firstAttribute="height" constant="44" id="EVq-AY-y6e"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconUndo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="Mmx-TH-ajW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYZ-iw-Gr9" userLabel="Button - Redo">
+                                <rect key="frame" x="54" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="PEf-2s-O8K"/>
+                                    <constraint firstAttribute="height" constant="44" id="kYh-7e-x32"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconRedo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redoTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="jlS-Dg-jXB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-iM-Zk5" userLabel="Button - Pen Options">
+                                <rect key="frame" x="228" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gJi-QO-n5A"/>
+                                    <constraint firstAttribute="width" constant="44" id="vsg-mf-u0l"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconPen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="penOptionsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="rz8-so-fnc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-Gs-Bte" userLabel="Button - Red Pen Toggle">
+                                <rect key="frame" x="272" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="JQ5-iw-hpD"/>
+                                    <constraint firstAttribute="height" constant="44" id="yN0-7W-9gf"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconPenRed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="penRedTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="Nss-71-E83"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzs-kl-Bbd" userLabel="Button - Eraser">
+                                <rect key="frame" x="316" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lqc-RX-BSg"/>
+                                    <constraint firstAttribute="width" constant="44" id="u22-Cz-OYr"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconEraser">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eraserTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="yss-GE-xmQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7j-eZ-aEw" userLabel="Button - Sketch Options">
+                                <rect key="frame" x="360" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Tkm-Fx-5M0"/>
+                                    <constraint firstAttribute="height" constant="44" id="zkg-LD-Pos"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconCSSettings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sketchActionsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="aKC-O1-l4d"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-xx-mEL" userLabel="Zoom Slider">
+                                <rect key="frame" x="104" y="26" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="186" id="OGo-n1-3mv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="zoomValueChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="SkV-gH-5Jt"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-4q-B8C">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8O-Ci-zlA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="10" id="0bR-v3-y5w"/>
+                            <constraint firstItem="OYZ-iw-Gr9" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="2js-rx-asB"/>
+                            <constraint firstItem="i7j-eZ-aEw" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailing" constant="-10" id="3dk-kv-1q9"/>
+                            <constraint firstItem="YV0-iM-Zk5" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="6IF-MU-QSf"/>
+                            <constraint firstItem="AL1-Gs-Bte" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="BdP-6u-4dY"/>
+                            <constraint firstItem="YV0-iM-Zk5" firstAttribute="leading" secondItem="GAA-xx-mEL" secondAttribute="trailing" priority="500" constant="8" id="CSU-yG-GRp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="c3R-4q-B8C" secondAttribute="bottom" id="GwY-2W-sgH"/>
+                            <constraint firstItem="GAA-xx-mEL" firstAttribute="leading" secondItem="OYZ-iw-Gr9" secondAttribute="trailing" constant="8" id="Kur-IC-s6W"/>
+                            <constraint firstItem="r8O-Ci-zlA" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="Lg5-ch-IXh"/>
+                            <constraint firstItem="i7j-eZ-aEw" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="MIP-k5-dhr"/>
+                            <constraint firstItem="c3R-4q-B8C" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="44" id="ODi-cI-gZr"/>
+                            <constraint firstItem="tzs-kl-Bbd" firstAttribute="leading" secondItem="AL1-Gs-Bte" secondAttribute="trailing" id="RI8-CU-TsD"/>
+                            <constraint firstItem="i7j-eZ-aEw" firstAttribute="leading" secondItem="tzs-kl-Bbd" secondAttribute="trailing" id="Syt-71-8dK"/>
+                            <constraint firstItem="tzs-kl-Bbd" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="byd-9l-bYm"/>
+                            <constraint firstAttribute="trailing" secondItem="c3R-4q-B8C" secondAttribute="trailing" id="gQS-T1-vue"/>
+                            <constraint firstItem="AL1-Gs-Bte" firstAttribute="leading" secondItem="YV0-iM-Zk5" secondAttribute="trailing" id="kzt-2e-Egm"/>
+                            <constraint firstItem="GAA-xx-mEL" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="6" id="mnx-fN-LvG"/>
+                            <constraint firstItem="OYZ-iw-Gr9" firstAttribute="leading" secondItem="r8O-Ci-zlA" secondAttribute="trailing" id="y7h-PL-eqk"/>
+                            <constraint firstItem="c3R-4q-B8C" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="yXI-Qt-4tC"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="eraserButton" destination="tzs-kl-Bbd" id="ldX-lm-rQU"/>
+                        <outlet property="penButton" destination="YV0-iM-Zk5" id="2Nv-sC-Z5X"/>
+                        <outlet property="redPenButton" destination="AL1-Gs-Bte" id="saM-iy-wE5"/>
+                        <outlet property="redobutton" destination="OYZ-iw-Gr9" id="bY2-0O-YvO"/>
+                        <outlet property="sketchActionsButton" destination="i7j-eZ-aEw" id="vAe-7m-0rx"/>
+                        <outlet property="sketchViewWrapper" destination="c3R-4q-B8C" id="Mnr-la-wgo"/>
+                        <outlet property="undoButton" destination="r8O-Ci-zlA" id="3fj-nq-g1t"/>
+                        <outlet property="zoomSlider" destination="GAA-xx-mEL" id="euX-I2-XrH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconCSSettings" width="44" height="44"/>
+        <image name="iconEraser" width="44" height="44"/>
+        <image name="iconPen" width="44" height="44"/>
+        <image name="iconPenRed" width="44" height="44"/>
+        <image name="iconRedo" width="44" height="44"/>
+        <image name="iconUndo" width="44" height="44"/>
+    </resources>
 </document>
