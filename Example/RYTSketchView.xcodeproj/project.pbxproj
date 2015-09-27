@@ -25,7 +25,6 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */; };
 		940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */; };
-		940C56EC1B363B8C00C430FA /* UIView+printSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +69,6 @@
 		940C56A81B3575F200C430FA /* RYTSketchPenOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchPenOptionsViewController.h; sourceTree = "<group>"; };
 		940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTSketchPenOptionsViewController.m; sourceTree = "<group>"; };
 		940C56AB1B357BF000C430FA /* RYTPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTPopoverDelegate.h; sourceTree = "<group>"; };
-		940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+printSubviews.h"; sourceTree = "<group>"; };
-		940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+printSubviews.m"; sourceTree = "<group>"; };
 		98354C1EB2A3D8672DFC9181 /* RYTSketchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RYTSketchView.podspec; path = ../RYTSketchView.podspec; sourceTree = "<group>"; };
 		D1EC269CFB3AB2E2877DB4CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,8 +152,6 @@
 				6003F5A5195388D20070C39A /* RYTViewController.h */,
 				6003F5A6195388D20070C39A /* RYTViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */,
-				940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */,
 			);
 			name = "Example for RYTSketchView";
 			path = RYTSketchView;
@@ -417,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940C56EC1B363B8C00C430FA /* UIView+printSubviews.m in Sources */,
 				6003F59E195388D20070C39A /* RYTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RYTViewController.m in Sources */,
 				940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */,

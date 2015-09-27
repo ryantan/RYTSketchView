@@ -1,6 +1,6 @@
 //
 //  RYTSketchViewUtils.m
-//  Pods
+//  RYTSketchView
 //
 //  Created by Ryan on 20/6/15.
 //

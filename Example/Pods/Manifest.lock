@@ -2,6 +2,11 @@ PODS:
   - MBProgressHUD (0.9.1)
   - RYTSketchView (0.1.0):
     - MBProgressHUD (~> 0.5)
+    - UIColor+Hex
+  - UIColor+Hex (1.0.1):
+    - UIColor+Hex/NSColor (= 1.0.1)
+    - UIColor+Hex/UIColor (= 1.0.1)
+  - UIColor+Hex/UIColor (1.0.1)
 
 DEPENDENCIES:
   - RYTSketchView (from `../`)
@@ -12,6 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  RYTSketchView: 3b72df4a16c7d7a307e434347402fd830c52c12e
+  RYTSketchView: ea1aa8b0bcce948e5d65fe9335eee334420e3f34
+  UIColor+Hex: 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
 
 COCOAPODS: 0.38.2

@@ -1,6 +1,6 @@
 //
 //  RYTStroke.m
-//  Pods
+//  RYTSketchView
 //
 //  Created by Ryan on 26/9/15.
 //

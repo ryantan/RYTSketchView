@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "306AD3F59D289756BE81FBA3"
+               BlueprintIdentifier = "325E63365CE8BD74E1BE7B7D"
                BuildableName = "RYTSketchView.framework"
                BlueprintName = "RYTSketchView"
                ReferencedContainer = "container:Pods.xcodeproj">

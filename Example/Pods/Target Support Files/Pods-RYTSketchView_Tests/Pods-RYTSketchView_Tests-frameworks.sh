@@ -54,8 +54,10 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-RYTSketchView_Tests/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Tests/RYTSketchView.framework'
+  install_framework 'Pods-RYTSketchView_Tests/UIColor_Hex.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-RYTSketchView_Tests/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Tests/RYTSketchView.framework'
+  install_framework 'Pods-RYTSketchView_Tests/UIColor_Hex.framework'
 fi

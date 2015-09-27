@@ -8,7 +8,6 @@
 
 #import "RYTPenOptionsViewController.h"
 #import "RYTSketchView.h"
-#import "UIColor-Expanded.h"
 
 @interface RYTPenOptionsViewController ()
 
@@ -83,7 +82,8 @@
     
     [self.view addSubview:wrapper];
     
-    self.view.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    //self.view.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    self.view.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:250.0 alpha:1.0];
     
     //self.view.frame = CGRectMake(0, 0, 190, 190);
     self.view.frame = CGRectMake(0, 0, 190, 250);

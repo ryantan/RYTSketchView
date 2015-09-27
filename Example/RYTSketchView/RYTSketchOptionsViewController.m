@@ -81,7 +81,7 @@
     [theView addSubview:wrapper];
     
     //theView.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
-    theView.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:205.0 alpha:1.0];
+    theView.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:250.0 alpha:1.0];
     
     self.view = theView;
 }

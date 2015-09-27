@@ -1,6 +1,6 @@
 //
 //  RYTSketchViewPenOptionsDelegate.h
-//  Pods
+//  RYTSketchView
 //
 //  Created by Ryan on 20/6/15.
 //
@@ -12,9 +12,6 @@
 @class RYTSketchView;
 
 @protocol RYTSketchViewPenOptionsDelegate <NSObject>
-
-- (void)
-
 
 @end
 
