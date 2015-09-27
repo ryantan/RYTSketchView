@@ -11,6 +11,7 @@
 
 @protocol RYTPopoverDelegate <NSObject>
 
+- (void)dismissPopoversAnimated:(BOOL)animated;
 - (void)popover:(UIPopoverController *)popoverController dismissAnimated:(BOOL)animated;
 
 @end

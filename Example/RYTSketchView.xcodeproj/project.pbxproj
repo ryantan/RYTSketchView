@@ -25,6 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */; };
 		940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */; };
+		949BC59F1BB7CB8400261044 /* NSObject+UIPopover_Iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 949BC59E1BB7CB8400261044 /* NSObject+UIPopover_Iphone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		940C56A81B3575F200C430FA /* RYTSketchPenOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchPenOptionsViewController.h; sourceTree = "<group>"; };
 		940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTSketchPenOptionsViewController.m; sourceTree = "<group>"; };
 		940C56AB1B357BF000C430FA /* RYTPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTPopoverDelegate.h; sourceTree = "<group>"; };
+		949BC59D1BB7CB8400261044 /* NSObject+UIPopover_Iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UIPopover_Iphone.h"; sourceTree = "<group>"; };
+		949BC59E1BB7CB8400261044 /* NSObject+UIPopover_Iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIPopover_Iphone.m"; sourceTree = "<group>"; };
 		98354C1EB2A3D8672DFC9181 /* RYTSketchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RYTSketchView.podspec; path = ../RYTSketchView.podspec; sourceTree = "<group>"; };
 		D1EC269CFB3AB2E2877DB4CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				6003F5A5195388D20070C39A /* RYTViewController.h */,
 				6003F5A6195388D20070C39A /* RYTViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				949BC59D1BB7CB8400261044 /* NSObject+UIPopover_Iphone.h */,
+				949BC59E1BB7CB8400261044 /* NSObject+UIPopover_Iphone.m */,
 			);
 			name = "Example for RYTSketchView";
 			path = RYTSketchView;
@@ -269,6 +274,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Ryan;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = L6342V6QXL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -414,6 +422,7 @@
 			files = (
 				6003F59E195388D20070C39A /* RYTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RYTViewController.m in Sources */,
+				949BC59F1BB7CB8400261044 /* NSObject+UIPopover_Iphone.m in Sources */,
 				940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */,
@@ -539,6 +548,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RYTSketchView/RYTSketchView-Prefix.pch";
 				INFOPLIST_FILE = "RYTSketchView/RYTSketchView-Info.plist";
@@ -546,6 +557,7 @@
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -556,6 +568,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RYTSketchView/RYTSketchView-Prefix.pch";
 				INFOPLIST_FILE = "RYTSketchView/RYTSketchView-Info.plist";
@@ -563,6 +577,7 @@
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

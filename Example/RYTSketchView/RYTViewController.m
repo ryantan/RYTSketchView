@@ -27,8 +27,11 @@
     //CGFloat startPanDist;
     //CGFloat startZoomScale;
     
+    WYPopoverController* _popoverController;
+    
 }
 
+@property (strong, nonatomic) IBOutlet UIView *sketchViewWrapper;
 @property (weak, nonatomic) IBOutlet UIButton *penButton;
 @property (weak, nonatomic) IBOutlet UIButton *redPenButton;
 @property (weak, nonatomic) IBOutlet UIButton *eraserButton;
@@ -36,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *undoButton;
 @property (weak, nonatomic) IBOutlet UIButton *redobutton;
 @property (weak, nonatomic) IBOutlet UISlider *zoomSlider;
+@property (strong, nonatomic) IBOutlet UILabel *zoomLabel;
 
 @end
 
@@ -206,6 +210,9 @@
     [popoverController dismissPopoverAnimated:animated];
 }
 
+- (void)dismissPopoversAnimated:(BOOL)animated {
+    [_popoverController dismissPopoverAnimated:animated];
+}
 
 
 
@@ -353,13 +360,21 @@
     
     RYTSketchOptionsViewController *sketchOptionsController = [[RYTSketchOptionsViewController alloc] init];
     sketchOptionsController.sketchView = sketchView;
-    UIPopoverController *pc = [[UIPopoverController alloc] initWithContentViewController:sketchOptionsController];
-    sketchOptionsController.popoverController = pc;
     
-    UIView *theButton = (UIView*)sender;
-    //CGRect sourceFrame = CGRectMake(theButton.frame.origin.x, theButton.frame.origin.y+44, theButton.frame.size.width, theButton.frame.size.height);
+    UIView *triggerButton = (UIView*)sender;
+    //CGRect sourceFrame = CGRectMake(triggerButton.frame.origin.x, triggerButton.frame.origin.y+44, triggerButton.frame.size.width, triggerButton.frame.size.height);
     
-    [pc presentPopoverFromRect:theButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    // Show in UIPopoverController.
+    //UIPopoverController *pc = [[UIPopoverController alloc] initWithContentViewController:sketchOptionsController];
+    //sketchOptionsController.popoverController = pc;
+    //[pc presentPopoverFromRect:triggerButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    
+    
+    // Show in WYPopoverController.
+    _popoverController = [[WYPopoverController alloc] initWithContentViewController:sketchOptionsController];
+    _popoverController.delegate = self;
+    sketchOptionsController.popoverDelegate = self;
+    [_popoverController presentPopoverFromRect:triggerButton.frame inView:self.view permittedArrowDirections:WYPopoverArrowDirectionUp animated:YES];
 }
 
 - (IBAction)undoTapped:(id)sender {
@@ -438,9 +453,28 @@
 }
 
 - (IBAction)zoomValueChanged:(id)sender {
+    
+    if (fabs(1.0 - self.zoomSlider.value) < 0.07) {
+        self.zoomSlider.value = 1.0;
+    }
+    
     [self zoomAccordingToSliderZoom];
 }
 
+
+
+
+
+#pragma mark - WYPopoverControllerDelegate
+
+- (BOOL)popoverControllerShouldDismissPopover:(WYPopoverController *)controller {
+    return YES;
+}
+
+- (void)popoverControllerDidDismissPopover:(WYPopoverController *)controller {
+    _popoverController.delegate = nil;
+    _popoverController = nil;
+}
 
 
 
@@ -452,15 +486,20 @@
 - (void)showPenOptionsFromButton:(id)sender {
     RYTSketchPenOptionsViewController *penOptionsController = [[RYTSketchPenOptionsViewController alloc] init];
     penOptionsController.sketchView = sketchView;
-    UIPopoverController *pc = [[UIPopoverController alloc] initWithContentViewController:penOptionsController];
-    penOptionsController.popoverController = pc;
     
-    UIView *theButton = (UIView*)sender;
-    //CGRect sourceFrame = CGRectMake(theButton.frame.origin.x, theButton.frame.origin.y+44, theButton.frame.size.width, theButton.frame.size.height);
+    UIView *triggerButton = (UIView*)sender;
     
-    [pc presentPopoverFromRect:theButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    // Show in UIPopoverController.
+    //UIPopoverController *pc = [[UIPopoverController alloc] initWithContentViewController:penOptionsController];
+    //penOptionsController.popoverController = pc;
+    //[pc presentPopoverFromRect:triggerButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    
+    // Show in WYPopoverController.
+    _popoverController = [[WYPopoverController alloc] initWithContentViewController:penOptionsController];
+    _popoverController.delegate = self;
+    penOptionsController.popoverDelegate = self;
+    [_popoverController presentPopoverFromRect:triggerButton.frame inView:self.view permittedArrowDirections:WYPopoverArrowDirectionUp animated:YES];
 }
-
 
 - (void)zoomAccordingToSliderZoom{
     //NSLog(@"zoomAccordingToSliderZoom, zoomSlider.value=%f", _zoomSlider.value);
@@ -468,6 +507,7 @@
     //NSLog(@"_scrollView.zoomScale: %f", _scrollView.zoomScale);
     _scrollView.zoomScale = _zoomSlider.value;
     [_scrollView flashScrollIndicators];
+    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %4.2f", self.zoomSlider.value];
 }
 
 

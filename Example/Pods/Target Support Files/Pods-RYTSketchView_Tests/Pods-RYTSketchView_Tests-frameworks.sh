@@ -55,9 +55,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-RYTSketchView_Tests/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Tests/RYTSketchView.framework'
   install_framework 'Pods-RYTSketchView_Tests/UIColor_Hex.framework'
+  install_framework 'Pods-RYTSketchView_Tests/WYPopoverController.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-RYTSketchView_Tests/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Tests/RYTSketchView.framework'
   install_framework 'Pods-RYTSketchView_Tests/UIColor_Hex.framework'
+  install_framework 'Pods-RYTSketchView_Tests/WYPopoverController.framework'
 fi

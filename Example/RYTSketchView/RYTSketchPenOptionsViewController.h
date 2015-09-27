@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RYTPopoverDelegate.h"
 
 @class RYTSketchView;
 
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) RYTSketchView *sketchView;
 @property (nonatomic, strong) UIPopoverController *popoverController;
 //@property (nonatomic, strong) SketchViewController *sketchViewController;
+@property (nonatomic, strong) id<RYTPopoverDelegate> popoverDelegate;
 
 - (void)thicknessTapped:(id)sender;
 - (void)colorTapped:(id)sender;

@@ -27,9 +27,18 @@
 
 @end
 
+
 @implementation RYTSketchPenOptionsViewController
 
 @synthesize sketchView, popoverController;
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.preferredContentSize = CGSizeMake(190, 250);
+    }
+    return self;
+}
 
 - (void)loadView {
     
@@ -98,13 +107,13 @@
     theView.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:250.0 alpha:1.0];
     
     self.view = theView;
+    //self.preferredContentSize = CGSizeMake(190, 190);
+    self.preferredContentSize = CGSizeMake(190, 250);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //self.preferredContentSize = CGSizeMake(190, 190);
-    self.preferredContentSize = CGSizeMake(190, 250);
     
 }
 
@@ -217,7 +226,10 @@
     
     if (self.popoverController){
         [self.popoverController dismissPopoverAnimated:YES];
+    }else if (self.popoverDelegate) {
+        [self.popoverDelegate dismissPopoversAnimated:YES];
     }
+    
 }
 
 @end

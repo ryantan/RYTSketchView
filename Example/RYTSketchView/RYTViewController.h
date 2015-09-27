@@ -10,10 +10,10 @@
 
 #import <RYTSketchView/RYTSketchView.h>
 #import "RYTPopoverDelegate.h"
+#import <WYPopoverController/WYPopoverController.h>
 
-@interface RYTViewController : UIViewController <RYTPopoverDelegate, RYTSketchViewDelegate, UIScrollViewDelegate>
+@interface RYTViewController : UIViewController <RYTPopoverDelegate, RYTSketchViewDelegate, UIScrollViewDelegate, WYPopoverControllerDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *sketchViewWrapper;
 
 - (IBAction)penOptionsTapped:(id)sender;
 - (IBAction)penRedTapped:(id)sender;

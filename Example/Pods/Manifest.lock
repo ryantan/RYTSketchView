@@ -3,10 +3,12 @@ PODS:
   - RYTSketchView (0.1.0):
     - MBProgressHUD (~> 0.5)
     - UIColor+Hex
+    - WYPopoverController
   - UIColor+Hex (1.0.1):
     - UIColor+Hex/NSColor (= 1.0.1)
     - UIColor+Hex/UIColor (= 1.0.1)
   - UIColor+Hex/UIColor (1.0.1)
+  - WYPopoverController (0.3.8)
 
 DEPENDENCIES:
   - RYTSketchView (from `../`)
@@ -17,7 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  RYTSketchView: ea1aa8b0bcce948e5d65fe9335eee334420e3f34
+  RYTSketchView: a794dbc386463b9c33158a42b6bd2cf708623294
   UIColor+Hex: 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+  WYPopoverController: dda54780e1bef186464ae5a10ab9b4998c279e89
 
 COCOAPODS: 0.38.2

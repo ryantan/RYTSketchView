@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "RYTPopoverDelegate.h"
-////#import "RYTSketchViewControllerDelegate.h"
+#import "RYTPopoverDelegate.h"
 
 @class RYTSketchView;
 
@@ -16,7 +15,7 @@
 
 @property (nonatomic, strong) RYTSketchView *sketchView;
 @property (nonatomic, strong) UIPopoverController *popoverController;
-//@property (nonatomic, strong) id<RYTPopoverDelegate> popoverDelegate;
+@property (nonatomic, strong) id<RYTPopoverDelegate> popoverDelegate;
 
 //@property (nonatomic, strong) id<RYTSketchViewControllerDelegate> sketchViewControllerDelegate;
 //@property (nonatomic, strong) RYTSketchViewController *sketchViewController;
@@ -26,6 +25,6 @@
 //- (void)duplicateTapped:(id)sender;
 - (void)copyTapped:(id)sender;
 - (void)pasteTapped:(id)sender;
-- (void)cameraTapped:(id)sender;
+//- (void)cameraTapped:(id)sender;
 
 @end

@@ -96,42 +96,65 @@
                                     <action selector="sketchActionsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="aKC-O1-l4d"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-4q-B8C">
+                                <rect key="frame" x="0.0" y="64" width="414" height="629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-xx-mEL" userLabel="Zoom Slider">
-                                <rect key="frame" x="104" y="26" width="118" height="31"/>
+                                <rect key="frame" x="14" y="690" width="274" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="186" id="OGo-n1-3mv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OGo-n1-3mv"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="zoomValueChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="SkV-gH-5Jt"/>
                                 </connections>
                             </slider>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-4q-B8C">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-KD-mMc">
+                                <rect key="frame" x="318" y="688" width="80" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7PH-gn-GDd"/>
+                                    <constraint firstAttribute="height" constant="32" id="9ah-12-l3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r8O-Ci-zlA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="10" id="0bR-v3-y5w"/>
                             <constraint firstItem="OYZ-iw-Gr9" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="2js-rx-asB"/>
+                            <constraint firstItem="GAA-xx-mEL" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="2tL-xN-rOf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d38-KD-mMc" secondAttribute="trailing" id="3NX-EL-QS6"/>
                             <constraint firstItem="i7j-eZ-aEw" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailing" constant="-10" id="3dk-kv-1q9"/>
                             <constraint firstItem="YV0-iM-Zk5" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="6IF-MU-QSf"/>
+                            <constraint firstItem="c3R-4q-B8C" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="topMargin" constant="64" id="6SZ-0E-F0G"/>
                             <constraint firstItem="AL1-Gs-Bte" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="BdP-6u-4dY"/>
-                            <constraint firstItem="YV0-iM-Zk5" firstAttribute="leading" secondItem="GAA-xx-mEL" secondAttribute="trailing" priority="500" constant="8" id="CSU-yG-GRp"/>
                             <constraint firstAttribute="bottomMargin" secondItem="c3R-4q-B8C" secondAttribute="bottom" id="GwY-2W-sgH"/>
-                            <constraint firstItem="GAA-xx-mEL" firstAttribute="leading" secondItem="OYZ-iw-Gr9" secondAttribute="trailing" constant="8" id="Kur-IC-s6W"/>
                             <constraint firstItem="r8O-Ci-zlA" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="Lg5-ch-IXh"/>
                             <constraint firstItem="i7j-eZ-aEw" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="MIP-k5-dhr"/>
                             <constraint firstItem="c3R-4q-B8C" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="44" id="ODi-cI-gZr"/>
+                            <constraint firstItem="d38-KD-mMc" firstAttribute="leading" secondItem="GAA-xx-mEL" secondAttribute="trailing" constant="32" id="Qvu-HJ-cFC"/>
                             <constraint firstItem="tzs-kl-Bbd" firstAttribute="leading" secondItem="AL1-Gs-Bte" secondAttribute="trailing" id="RI8-CU-TsD"/>
                             <constraint firstItem="i7j-eZ-aEw" firstAttribute="leading" secondItem="tzs-kl-Bbd" secondAttribute="trailing" id="Syt-71-8dK"/>
                             <constraint firstItem="tzs-kl-Bbd" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="byd-9l-bYm"/>
                             <constraint firstAttribute="trailing" secondItem="c3R-4q-B8C" secondAttribute="trailing" id="gQS-T1-vue"/>
                             <constraint firstItem="AL1-Gs-Bte" firstAttribute="leading" secondItem="YV0-iM-Zk5" secondAttribute="trailing" id="kzt-2e-Egm"/>
-                            <constraint firstItem="GAA-xx-mEL" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="6" id="mnx-fN-LvG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GAA-xx-mEL" secondAttribute="bottom" constant="16" id="pPx-MX-6hD"/>
                             <constraint firstItem="OYZ-iw-Gr9" firstAttribute="leading" secondItem="r8O-Ci-zlA" secondAttribute="trailing" id="y7h-PL-eqk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="d38-KD-mMc" secondAttribute="bottom" constant="16" id="yHP-KK-aZ8"/>
                             <constraint firstItem="c3R-4q-B8C" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="yXI-Qt-4tC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ODi-cI-gZr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -142,6 +165,7 @@
                         <outlet property="sketchActionsButton" destination="i7j-eZ-aEw" id="vAe-7m-0rx"/>
                         <outlet property="sketchViewWrapper" destination="c3R-4q-B8C" id="Mnr-la-wgo"/>
                         <outlet property="undoButton" destination="r8O-Ci-zlA" id="3fj-nq-g1t"/>
+                        <outlet property="zoomLabel" destination="d38-KD-mMc" id="vUv-IL-IhM"/>
                         <outlet property="zoomSlider" destination="GAA-xx-mEL" id="euX-I2-XrH"/>
                     </connections>
                 </viewController>
