@@ -9,7 +9,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "RYTSketchView.h"
 #import "RYTSketchViewUtils.h"
-#import "UIColor+Hex.h"
+#import "UIColor-Expanded.h"
+//#import "UIColor+Hex.h"
 //#import "HexColors.h"
 
 // Convenience macro to convert color values. 
@@ -1441,7 +1442,7 @@ static UIImage *_clipboardContent = nil;
     //CGFloat r, g, b, a;
     //[color getRed:&r green:&g blue:&b alpha:&a];
     
-    NSString *h = [[color hexString] uppercaseString];
+    NSString *h = [[color hexStringFromColor] uppercaseString];
     //NSLog(@"h=%@", h);
     
     if ([h isEqualToString:@"030303"]){
@@ -1467,27 +1468,27 @@ static UIImage *_clipboardContent = nil;
     
     switch (_penColorIndex) {
         case 1:
-            _penColor = [UIColor colorWithHex:0x030303];
+            _penColor = [UIColor colorWithRGBHex:0x030303];
             break;
         case 2:
-            _penColor = [UIColor colorWithHex:0x599ecf];
+            _penColor = [UIColor colorWithRGBHex:0x599ecf];
             break;
         case 3:
-            _penColor = [UIColor colorWithHex:0x264773];
+            _penColor = [UIColor colorWithRGBHex:0x264773];
             break;
         case 4:
-            _penColor = [UIColor colorWithHex:0x9ebc2d];
+            _penColor = [UIColor colorWithRGBHex:0x9ebc2d];
             break;
         case 5:
-            _penColor = [UIColor colorWithHex:0xd11449];
+            _penColor = [UIColor colorWithRGBHex:0xd11449];
             break;
         case 6:
-            _penColor = [UIColor colorWithHex:0x920e33];
+            _penColor = [UIColor colorWithRGBHex:0x920e33];
             break;
             
         default:
             _penColorIndex = 0;
-            _penColor = [UIColor colorWithHex:0x030303];
+            _penColor = [UIColor colorWithRGBHex:0x030303];
             break;
     }
 }

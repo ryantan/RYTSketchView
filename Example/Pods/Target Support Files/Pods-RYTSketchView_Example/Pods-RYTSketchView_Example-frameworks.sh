@@ -54,12 +54,10 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-RYTSketchView_Example/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Example/RYTSketchView.framework'
-  install_framework 'Pods-RYTSketchView_Example/UIColor_Hex.framework'
   install_framework 'Pods-RYTSketchView_Example/WYPopoverController.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-RYTSketchView_Example/MBProgressHUD.framework'
   install_framework 'Pods-RYTSketchView_Example/RYTSketchView.framework'
-  install_framework 'Pods-RYTSketchView_Example/UIColor_Hex.framework'
   install_framework 'Pods-RYTSketchView_Example/WYPopoverController.framework'
 fi

@@ -27,9 +27,6 @@
       "MBProgressHUD": [
         "~> 0.5"
       ],
-      "UIColor+Hex": [
-
-      ],
       "WYPopoverController": [
 
       ]

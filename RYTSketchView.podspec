@@ -33,7 +33,6 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.ios.dependency 'MBProgressHUD', '~> 0.5'
-  # s.ios.dependency 'HexColors'
-  s.ios.dependency 'UIColor+Hex'
+  # s.ios.dependency 'UIColor+Hex'
   s.ios.dependency 'WYPopoverController'
 end

@@ -10,296 +10,268 @@
 		079965E5338BB27AAEB3ED195927C698 /* WYPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = E762445C4A1B7CDB360EB3CF54ACFD31 /* WYPopoverController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CE896BFE7DAB8729652E1DD87F1724C /* Joystick-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDFEA8A4D5D09A8F1C4C10F1FE862CC /* Joystick-bg.png */; };
 		0DCFA374EDCAE021B4F2404D0B82127B /* btnLabeledCopy.png in Resources */ = {isa = PBXBuildFile; fileRef = 72100E163A6E0695A50FB23CBD6A16F3 /* btnLabeledCopy.png */; };
-		0E66849D6E8AD2FB6531E674A3ACEE00 /* CubicBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1DA40A6D42AC9D2BED76F699A52E92 /* CubicBezier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1175DD2A42E907E2008EAFF3E2EF6B3A /* WYPopoverController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A54085744001E08A9730155D04A451 /* WYPopoverController.framework */; };
 		11DAF1BC6DBE6162419F9A936734226A /* penSky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EADD43BD120BF6AE9D609269273EB2B2 /* penSky-selected.png */; };
+		12355073F6EAA388CBF71A5E503E9820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
 		1365DB904C6D4F4B8B1831326ECF4572 /* penBurgundy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F76472F1C81DF26CB7FEC56B86DFDB9 /* penBurgundy.png */; };
-		151C6E9D0674BCAE6D3F0F42A0FEED82 /* RYTSketchViewUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DBB0A85FAB0891698A99F728628EC0 /* RYTSketchViewUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F11BF383702871A1927298B9D8941D /* Pods-RYTSketchView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7956B6AAE9716AC346CFCFCA75B6E2EF /* Pods-RYTSketchView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCD577392B552FE47F244FDFD2D2752 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
-		22792A106F3490ED52E6B8A8A04812A1 /* RYTSketchViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F6FE6673934A3DBD9705EB814745D7 /* RYTSketchViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		275B4D52162B0C9E025F8D7648742921 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C9288B38BD84CA165E12A54088197 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2818EC8422CBCAB34DD66ECA2481756B /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD589275C335CC57DF1A301062D6A3E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28CE54DC64A821C8A7B1B7AD50251AD4 /* btnLabeledDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = E32118946DDBD132AEC3AF7433387636 /* btnLabeledDelete.png */; };
+		2979DAA0F1446BD8799AC1F5AA98CE5E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7062DCBA0CCF9296ACF0F6B37BE48F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D1F21D779CEB9342742134AF51B00EF /* penThick1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4A7A55C02051DDD8C6DCF78C6D38A4 /* penThick1.png */; };
-		2D868837C03317CC458C9F1EC51CFCD5 /* RYTSketchView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F44F1C4289677C2E74A8B2A14C5BE10A /* RYTSketchView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EA0755EF06C2203CA2F0598E8334225 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 18310E5CB2F376054345E60531A675F1 /* UIColor-Expanded.m */; };
 		340535F3648C6E9629D9FBD1D477CA8D /* WYStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = E0B40E0A2145C5CF665189C0BFE985B0 /* WYStoryboardPopoverSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		343D51AFABCF95EF0AD52B04B4EDD4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
-		3A8104BE97C75A74C865F3DFC659E70A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8949F088CC0E3AE385E594CDCF014FCD /* UIColor+Hex.m */; };
-		3EE9F4B6A7A7B2F6DFBA46A6BC840A5E /* RYTPenOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD3645823AF6EF888061C78AB2A7E1D /* RYTPenOptionsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378FF2F8C227C75A83CF555FC8D997BD /* RYTSketchView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F81CBE8803129AB902F3243CA2FA09E /* RYTSketchView-dummy.m */; };
+		38565F6B879CBD98B5A72FD0FB984B04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */; };
+		3A68D911E49416808C42E604C2D2CCE3 /* RYTSketchView.h in Headers */ = {isa = PBXBuildFile; fileRef = B44669712D8453C7292432D9BBF1FAAF /* RYTSketchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B9841C2E05F989071E37829670365E3 /* RYTStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582A97DCC52176422A7A84E60444770 /* RYTStroke.m */; };
+		3BECA15A595E3E690B3345533F04E588 /* RYTSketchView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF52F007273EA7DEB57DCB2FC3DAD31 /* RYTSketchView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4332D66513DF52459075751A162A685F /* penGreen-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9D7D252493B8CD22D4F2526FF59BF /* penGreen-selected.png */; };
 		43774571541E7D509358BB632250B27F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */; };
 		46508CC8DEE62F1106D01C022AFFBBC7 /* penGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C18AC3DBC560C506566AC13B2B7EF4B3 /* penGreen.png */; };
-		468BE225094A6DEE889F87436172E7AE /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 149F1A1DC59BCC75EBA56F06ECA57ACF /* UIColor+Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47F3C677496E4D0A92FD1695BDAACC6C /* UIColor+Hex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CD2A847EEA5BD5767B532AAFA77FF /* UIColor+Hex-dummy.m */; };
-		4BB7A9FD6CC2084A21F5E4036B5A619C /* RYTSketchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D4709A59741ACBCC2D099780D5BE78 /* RYTSketchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F634B3542DBFEEC73BA972DA973937D /* Pods-RYTSketchView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C53AC4045EC0407B63CD1E44A2C56548 /* Pods-RYTSketchView_Tests-dummy.m */; };
-		512C36E282905F19F9F1E0547CDD7B42 /* CubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = E709D97FB93B03DECD90093AFA245C2C /* CubicBezier.m */; };
-		5CA63CE726DF167544C26AD3CEE9256E /* Pods-RYTSketchView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A426B7032235053BED1CD3C21B8E400F /* Pods-RYTSketchView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485024A1DE0FB69E2586210B60905C0C /* Pods-RYTSketchView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F41FCAA4DB429FD173ED1069065A05 /* Pods-RYTSketchView_Tests-dummy.m */; };
+		5057D3717AA861AA8A0911EBFFCB802D /* Pods-RYTSketchView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7904BF6CB58494A27F5278F65E9816F /* Pods-RYTSketchView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DFA94B29879103870E61B94D1D4DE52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66098635C26815FEB3EDFC55E0E5B6CE /* QuartzCore.framework */; };
 		60D2E85CD3C3C9A068C30BA86C9EE22E /* penThick1-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = A650321CECB56FA82D2C6902090779AA /* penThick1-selected.png */; };
-		6103B843D23116CD9513CFA2C23DB36D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */; };
-		61E05739BE25DCB72EC3924FBD2F9AC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7860BAD312B388CE89148344BB9F87 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6B28AE054A5ED67021E0121EF2EE805F /* Joystick-stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB2C5DA33D883BD17A4E035A22FED1 /* Joystick-stick.png */; };
 		6BD5994E80E00A94271679161F806F04 /* penBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = CDADF06FB61952867473BEF594AD83B8 /* penBlack.png */; };
 		6C7C9367AA9067C93BCE89B8CC22E1E7 /* penThick2.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE65E8669D8E796F41CDB8A88B6EBDB /* penThick2.png */; };
-		6D0B6F2EFF5F627F67A1548EA1B329BA /* WYPopoverController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF2D1D27F044135EC10759373B7F61 /* WYPopoverController.framework */; };
-		704C9F4A538E2476831EDB7470A846E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
-		7310AA66A1CF4105E48F9DC2D7460D12 /* RYTSketchView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 688074359F78D768004DD22D36C1F638 /* RYTSketchView.bundle */; };
-		75A66ECECBE76B47C07E4F792C70E7DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
+		705909AA07D7A23FA4DC5F41B0BA573E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
 		7946CADD68D86943998455C9685A5505 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1213F60F77A73167DEC2002990D0868 /* WYStoryboardPopoverSegue.m */; };
 		79CF4E7D9B7C83C256E1B596D2B917C5 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBFB78A852047AE5D7AE9014177461 /* WYPopoverController.m */; };
-		81BD83A99B2000A43F36F29EF98F65AB /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DA03C25FC8A9EFBBAB38FEB66137EF33 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84958FB47624119F6FDAF753BF545E56 /* RYTJoystickViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC5CDD21FB608F91AFF8B01393E7671 /* RYTJoystickViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ACBB8A82EEBDA32FD4C2FF70C27C037 /* UIColor+Hex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BF3ADA87DE968E4CAC5A3F40027238 /* UIColor+Hex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4AC4948FB8BED2802061CA9DDC0CC2 /* CubicBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B10E5B1CB15A70F2457E66F47FB0AB5 /* CubicBezier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E149D592FFA3A2B578A87D875EB711D /* penBurgundy-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0B5867DFE927C0E38CAC484E1E6D2 /* penBurgundy-selected.png */; };
-		93BF01764DBEBF2D5DD29AA0C38D3F7F /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA598EFDF71808E04A6716AFC8A140A /* MBProgressHUD.framework */; };
 		94B92119B06B0AD7C2704A09F669A055 /* btnLabeledClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4AA82041DA055F92435BE88C367838 /* btnLabeledClear.png */; };
-		9AFC9D7F113E0379F370033527E78ABB /* RYTPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB82CAF8BEA453FB2611C4711C5729 /* RYTPenOptionsViewController.m */; };
-		A0FB0961C51C773B3822C0ECF107FAD4 /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A769BD8EB7B48E570204998BCAB1620 /* UIColor-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96940113EEFDC549DAD1BAFB89C3BD9E /* CubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BB6BA21DFDFCAAEED0F3E0FF1704EB /* CubicBezier.m */; };
+		9887EE5521ED9B356930250E737E2A0A /* RYTSketchViewPenOptionsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 840C185493817356669B3CA221825D83 /* RYTSketchViewPenOptionsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B1B39074ECE6FDD4BD0731B4A256F5 /* RYTSketchViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D3396C9248365D608D556E0778AAC /* RYTSketchViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A46332957C94F4A4115B4FE347A06A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
 		A4BBA035BD20B5D3F2FA348683564F40 /* penBlack-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 034DC0D4C6042743EAD48715C4E4794C /* penBlack-selected.png */; };
-		A8F6FCCF0CD7876B9D48F783F834F609 /* UIView+printSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0A8EDA37EE14F017087DD571C40E1 /* UIView+printSubviews.m */; };
-		AA6A012B43DFD3290EE6C40FC384D5AB /* UIView+printSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E897EAA3413A8246BA3D4665AA9F1BC /* UIView+printSubviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC3E55811B067DDA06BA87B4CB545469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
-		ACFCCF6B703BA8994D30C3A04D1CE039 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 991CD8DBCCC9ECA6F562B98D37D0B12F /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE247F8129F76EEEC675F40B321ED8B4 /* RYTSketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25004FD88FB1B624FB7296448E5BDB9 /* RYTSketchView.m */; };
+		A573221491F6D1AF70A00326452D253A /* Pods-RYTSketchView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4B8BEB1AB00B6B574695F000BACC38 /* Pods-RYTSketchView_Example-dummy.m */; };
+		AA77C74C2A901B2743C6E83693EEFE98 /* RYTSketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD17873F1E03A379E47AE0FA5CAC46B /* RYTSketchView.m */; };
+		AC5B7A24121ADF1F0AF3D507AC946CB5 /* RYTPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AC98E1C8FD0E71C9056767B0E2A2E4 /* RYTPenOptionsViewController.m */; };
 		AFAAF8377071554EBD680E48A06832C5 /* penSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D3A43AE4A4BDD9C040BCF288FDA86A /* penSky.png */; };
-		B5884278F738F031089DBB334ECACEC8 /* RYTSketchViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CDB617A59E728CFC7B7A83C5CD813C /* RYTSketchViewUtils.m */; };
+		B3DDACB014AD7879E3C34FD7417E0362 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB52B6BFDC2578356F968F2C6706F3 /* MBProgressHUD-dummy.m */; };
+		B62E800E711A4EA2334B35D4E313A8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
+		B73EA20BF25B9239C7ADAE9DBC6AA53F /* UIView+LayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7FF7DB9670D38E0AE069A6DAC3682 /* UIView+LayoutHelper.m */; };
 		B9D9F0A7B7113D822C3012F943F0F012 /* penSteel.png in Resources */ = {isa = PBXBuildFile; fileRef = 025F76298AB451590620D8AF5C3DAD2A /* penSteel.png */; };
-		BCA03021F4426018E469BAD8A06827BA /* RYTStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F20176747247CED17FBD1197B15EC /* RYTStroke.m */; };
 		BE2874A2C1B74473C1B91601896CC30A /* WYPopoverController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAD878F4271570002704D09F8F34A16 /* WYPopoverController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C01215ED2A60005EE5D4D9DAE3B7475D /* RYTJoystickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0943E126B56B84C405E0E9586443 /* RYTJoystickView.m */; };
+		C0E02293D3CDF550FAD55EDD62FB9054 /* UIView+printSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACFBD17A6182ACF99898F6AF8FC8DF /* UIView+printSubviews.m */; };
 		C16255DA0DDB2FBAFDB9F902651C9209 /* btnLabeledPaste.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5C21C076D45CB2A8445E0FCD73A02 /* btnLabeledPaste.png */; };
-		C41F757F7468EB47418F9CDE8995FE1B /* Pods-RYTSketchView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C962FFCE98A1806B5C900A1E1DFF4EAA /* Pods-RYTSketchView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5EDCDCB83E1CB1C5212338BD8AB776C /* penThick2-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8B1E9C6396620BAD685C0B590CB7D2 /* penThick2-selected.png */; };
-		CB33FC3150C06259370354243B9B4C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */; };
+		C73F91D5BF134968AD689D3063EAD5C1 /* RYTStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C4D9A012B2EA969506307DB7EBF0BB /* RYTStroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEC4813D148D4AA407FCC3E6FF72E310 /* penThick3-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7C4C48C36C1D8739480B9D1787062 /* penThick3-selected.png */; };
-		D105312C8DB6FB01621D9E01483D17F8 /* RYTStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E5FE72EAC737D484B3C1E85EFC490E /* RYTStroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBB0D1337740C90E9FF83B7087D98931 /* UIView+LayoutHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CA0ABACA090EB3EB96D1306C90B863 /* UIView+LayoutHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC8C0DAA29D058CF2E9F3350ECAD5CB3 /* UIView+LayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4071CA110B8B43358224094420D20D9 /* UIView+LayoutHelper.m */; };
+		D1162F823A6477A5CD83E55B524ED768 /* RYTPenOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A038BCCDC57CD04FB590E09D116EEB4 /* RYTPenOptionsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D58BFE03379D40E2CB085C4C037DD2ED /* UIView+LayoutHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D314542DE17D2793540A56F161D3C49 /* UIView+LayoutHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B5057CEB65FC9103255A9861005001 /* RYTSketchView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 688074359F78D768004DD22D36C1F638 /* RYTSketchView.bundle */; };
 		DD08340AEE12EF330C658C32FBBFEC60 /* penSteel-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C3A777E8575EAD2067F769041AD5D /* penSteel-selected.png */; };
+		E03C4668C72DD6A8DCE49F3B1F654D8C /* UIView+printSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E20EF5B6C30225A46C1B8E88AE4805 /* UIView+printSubviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E06932001D1E055938F2DCD34BC5D529 /* penThick3.png in Resources */ = {isa = PBXBuildFile; fileRef = 79722EB6B9640903BCB2E7C5CD040D5D /* penThick3.png */; };
 		E1CB40D9928409F7A75A7CFF92D4235D /* WYPopoverController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84287E18988A4CB4157658E5014102BE /* WYPopoverController-dummy.m */; };
-		E3E19C2307F11C1CD706138C9F0C3C19 /* UIColor_Hex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D87E700077E1648A80F47A9E69C536 /* UIColor_Hex.framework */; };
-		E674393B94DA064E27C2B23C43D7B9AB /* RYTJoystickView.h in Headers */ = {isa = PBXBuildFile; fileRef = E65ECB23DD7A079928B547CD9147F348 /* RYTJoystickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E390F2F41073D5FB7E279C4EB17C9C96 /* RYTSketchViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEA7A13C1F013345C02BBC090A873C /* RYTSketchViewUtils.m */; };
+		E4857A9DBC24DD278C9E2CB547E945AF /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA81806AA6E78CC9FDDBC2D34BC87CA /* UIColor-Expanded.m */; };
+		E4B8661785A7B0CFC1DBD25922ECDE01 /* RYTSketchViewUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E753E670B2B0FB6A6309CE68E2E879 /* RYTSketchViewUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C76A94FB3EA63CB6029822081E624B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9855266685110706BE9B2172551F5 /* UIKit.framework */; };
-		EAE9A59B20AA7DAE77D16848C3C5F1A9 /* Pods-RYTSketchView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C11E39944661D5D15A53AC571DEC0A4D /* Pods-RYTSketchView_Example-dummy.m */; };
-		F3EB4BAE0E30C966BB0A5BC2FCC80C91 /* RYTSketchView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8FB75714A0C61BF9BE57337784259 /* RYTSketchView-dummy.m */; };
-		F3FFF72280FCA57416B078639DD9670F /* RYTJoystickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA6D1A368F7711101F32416E640C88 /* RYTJoystickView.m */; };
+		E9CD8BBC12C77FD1C86395E98F0CDFF2 /* RYTJoystickViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B20067169C96C79D860AAF4ACCC77D /* RYTJoystickViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA071B39BDB8544567309C5BB7639850 /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB6BA22B553BB76F6BDA644C9A22FBA /* UIColor-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA9CF2AFECD92761E27614B05377D9F1 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774F5CEAEBBA302400C25D169B3015F3 /* MBProgressHUD.framework */; };
+		F10C7FFE9FAADB0D467D1E335F5218B8 /* RYTJoystickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 796EAE5C040E41E2A809BAE7CAAF0309 /* RYTJoystickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6E1F7EE17C6781F4A7BC0D67C11C751 /* penRuby.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE7B677A62E9FA333A3BFD1503C3049 /* penRuby.png */; };
-		F8A269F3A65F513378D5B04D452F9F95 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F84103AFC0E711723E8DFDE741867B /* MBProgressHUD-dummy.m */; };
-		FA11476DDE07F64C9039C04A649B23EA /* RYTSketchViewPenOptionsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DA979356D21F4714FBA5C5B1A6F0B3DE /* RYTSketchViewPenOptionsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC413863B7FD1DEA3226808152F30054 /* penRuby-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 723B49DDF30022780CB3CDDA82E8E75E /* penRuby-selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0DD8FDC1AD4CBFAD6FD67830640C3502 /* PBXContainerItemProxy */ = {
+		00A794D4CE21E7515171B09494500E5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1619CFBD9DAAE6541050C4A739556211;
-			remoteInfo = "UIColor+Hex";
+			remoteGlobalIDString = C16B573CFBA3483B0BED618DB9E0444A;
+			remoteInfo = MBProgressHUD;
 		};
-		1D2ED02C62B3814B6D7FD448B969ABEC /* PBXContainerItemProxy */ = {
+		08DFCA9808B754C6D6A3B193BB504C37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E976D4CFE0172F2B420632647E2ADC6;
+			remoteGlobalIDString = 4395E2DE84D3099DCA6526B0EE1748EE;
 			remoteInfo = RYTSketchView;
 		};
-		29D19B0631F96B627C39E14A2288CD21 /* PBXContainerItemProxy */ = {
+		241FAB9336EFF8CF39B52010C5C036CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 95D27AC3390D72D23D2BB3AB46F0A17A;
 			remoteInfo = WYPopoverController;
 		};
-		34B39F808028F848796448610B3F66E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1619CFBD9DAAE6541050C4A739556211;
-			remoteInfo = "UIColor+Hex";
-		};
-		5B8D198F089F3B9294ED5D908F081E04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF0E324366FFA2F237BDAA36C6B3397F;
-			remoteInfo = MBProgressHUD;
-		};
-		5EFE7DDEFF8475221CC41A0FC637F19C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF0E324366FFA2F237BDAA36C6B3397F;
-			remoteInfo = MBProgressHUD;
-		};
-		6135935710A4255560BBE59D8DDFA85B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1619CFBD9DAAE6541050C4A739556211;
-			remoteInfo = "UIColor+Hex";
-		};
-		9A028E7AAF54618D2E0AE09C4B37C0BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF0E324366FFA2F237BDAA36C6B3397F;
-			remoteInfo = MBProgressHUD;
-		};
-		9B2A7D3A3C79CBA0518FC98742371610 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95D27AC3390D72D23D2BB3AB46F0A17A;
-			remoteInfo = WYPopoverController;
-		};
-		D96826EAF9E167065766DAFD6DFEDABD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95D27AC3390D72D23D2BB3AB46F0A17A;
-			remoteInfo = WYPopoverController;
-		};
-		E33A2FA318278DB1B209E457A4C4E609 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E976D4CFE0172F2B420632647E2ADC6;
-			remoteInfo = RYTSketchView;
-		};
-		EB7D5DF01E11496B0C097BC38A6CBE0B /* PBXContainerItemProxy */ = {
+		63F5A1607C862AB8E0B97F63681A11B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2B112CEBC317CEBA480E031B6BA8EA1C;
 			remoteInfo = "RYTSketchView-RYTSketchView";
 		};
+		B33BC547556E2AAE9E2B7E2E1D2D43E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95D27AC3390D72D23D2BB3AB46F0A17A;
+			remoteInfo = WYPopoverController;
+		};
+		D558761811BD75B8818D1A9963699E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C16B573CFBA3483B0BED618DB9E0444A;
+			remoteInfo = MBProgressHUD;
+		};
+		E3788822A0DB7D7F9DF7AC6D8EA9B625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4395E2DE84D3099DCA6526B0EE1748EE;
+			remoteInfo = RYTSketchView;
+		};
+		EB00E052F37C011E97A50EFBA5A61279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95D27AC3390D72D23D2BB3AB46F0A17A;
+			remoteInfo = WYPopoverController;
+		};
+		F40E5605CE664D26538D2C7AA8352B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C16B573CFBA3483B0BED618DB9E0444A;
+			remoteInfo = MBProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		025F76298AB451590620D8AF5C3DAD2A /* penSteel.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penSteel.png; sourceTree = "<group>"; };
 		034DC0D4C6042743EAD48715C4E4794C /* penBlack-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penBlack-selected.png"; sourceTree = "<group>"; };
-		044F20176747247CED17FBD1197B15EC /* RYTStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTStroke.m; sourceTree = "<group>"; };
-		0A7CD2A847EEA5BD5767B532AAFA77FF /* UIColor+Hex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex-dummy.m"; sourceTree = "<group>"; };
-		0DF7AC7F831AA75BEF0371338FE82EF9 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		13C8D6F6FAEFA108AF9283210DA112DA /* Pods_RYTSketchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		149F1A1DC59BCC75EBA56F06ECA57ACF /* UIColor+Hex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "UIColor/UIColor+Hex.h"; sourceTree = "<group>"; };
-		14F771BAB71F63138F38A9B8861B2648 /* Pods-RYTSketchView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AD589275C335CC57DF1A301062D6A3E /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		11BB6BA21DFDFCAAEED0F3E0FF1704EB /* CubicBezier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CubicBezier.m; sourceTree = "<group>"; };
+		12C4D9A012B2EA969506307DB7EBF0BB /* RYTStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTStroke.h; sourceTree = "<group>"; };
+		15EBD901CE2245C6FE62CE4DF0A52465 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F0AC2FC6D06118A6196A89112145AE /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18310E5CB2F376054345E60531A675F1 /* UIColor-Expanded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		17D5C727AAF2F41C23AF22AD5C883246 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		1AE7B677A62E9FA333A3BFD1503C3049 /* penRuby.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penRuby.png; sourceTree = "<group>"; };
 		1C8B1E9C6396620BAD685C0B590CB7D2 /* penThick2-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penThick2-selected.png"; sourceTree = "<group>"; };
+		1CF52F007273EA7DEB57DCB2FC3DAD31 /* RYTSketchView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYTSketchView-umbrella.h"; sourceTree = "<group>"; };
+		1D314542DE17D2793540A56F161D3C49 /* UIView+LayoutHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutHelper.h"; sourceTree = "<group>"; };
 		1DA5C21C076D45CB2A8445E0FCD73A02 /* btnLabeledPaste.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = btnLabeledPaste.png; sourceTree = "<group>"; };
 		1DE1503FF8325B135012E455CE950F0E /* RYTSketchView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYTSketchView-prefix.pch"; sourceTree = "<group>"; };
 		1F76472F1C81DF26CB7FEC56B86DFDB9 /* penBurgundy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penBurgundy.png; sourceTree = "<group>"; };
-		20CB82CAF8BEA453FB2611C4711C5729 /* RYTPenOptionsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTPenOptionsViewController.m; sourceTree = "<group>"; };
 		23E9855266685110706BE9B2172551F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		25FBFB78A852047AE5D7AE9014177461 /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
+		2AF7FF7DB9670D38E0AE069A6DAC3682 /* UIView+LayoutHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutHelper.m"; sourceTree = "<group>"; };
 		2C7F6E7153093C0F55C23C4C388D0A47 /* Pods-RYTSketchView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYTSketchView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2CD5DDF1E347EE01F42CFB1782780758 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DA0A8EDA37EE14F017087DD571C40E1 /* UIView+printSubviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+printSubviews.m"; sourceTree = "<group>"; };
 		2DFB2C5DA33D883BD17A4E035A22FED1 /* Joystick-stick.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Joystick-stick.png"; sourceTree = "<group>"; };
+		368D2DC392F84E893A4557AE01120E8A /* MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
 		38B052FE246A091A47280ACDDE9E59FE /* Pods-RYTSketchView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYTSketchView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B03339D910EFA39F0998D0F42CC1F0B /* Pods-RYTSketchView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3C8C9288B38BD84CA165E12A54088197 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		3EE256E5A267F1038018A0F624205B5B /* WYPopoverController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WYPopoverController-Private.xcconfig"; sourceTree = "<group>"; };
-		40ECE02ACF1007056B44DFE1C0C8A086 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E753E670B2B0FB6A6309CE68E2E879 /* RYTSketchViewUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewUtils.h; sourceTree = "<group>"; };
 		4414567689252E80109C20EEC5C2B851 /* Pods-RYTSketchView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RYTSketchView_Example.modulemap"; sourceTree = "<group>"; };
-		45BF3ADA87DE968E4CAC5A3F40027238 /* UIColor+Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex-umbrella.h"; sourceTree = "<group>"; };
 		45D3A43AE4A4BDD9C040BCF288FDA86A /* penSky.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penSky.png; sourceTree = "<group>"; };
-		49CA0ABACA090EB3EB96D1306C90B863 /* UIView+LayoutHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutHelper.h"; sourceTree = "<group>"; };
 		4ABFE4543994219554421DF544B32EBD /* RYTSketchView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RYTSketchView.modulemap; sourceTree = "<group>"; };
-		4C334124E450510D48FA2640431B99F3 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51EA6D1A368F7711101F32416E640C88 /* RYTJoystickView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTJoystickView.m; sourceTree = "<group>"; };
 		56A5051F9789F02F0B0D55FF942E93CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FD3645823AF6EF888061C78AB2A7E1D /* RYTPenOptionsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTPenOptionsViewController.h; sourceTree = "<group>"; };
+		58B20067169C96C79D860AAF4ACCC77D /* RYTJoystickViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTJoystickViewDelegate.h; sourceTree = "<group>"; };
+		5B7062DCBA0CCF9296ACF0F6B37BE48F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		607CA0590DE616E5B626D63C8AFCEFB8 /* Pods-RYTSketchView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYTSketchView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		62F41FCAA4DB429FD173ED1069065A05 /* Pods-RYTSketchView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYTSketchView_Tests-dummy.m"; sourceTree = "<group>"; };
+		65AC98E1C8FD0E71C9056767B0E2A2E4 /* RYTPenOptionsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTPenOptionsViewController.m; sourceTree = "<group>"; };
 		66098635C26815FEB3EDFC55E0E5B6CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		688074359F78D768004DD22D36C1F638 /* RYTSketchView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYTSketchView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		68D4709A59741ACBCC2D099780D5BE78 /* RYTSketchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchView.h; sourceTree = "<group>"; };
-		6A3330DB38AEACDF82C0CF787429723F /* RYTSketchView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RYTSketchView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4AA82041DA055F92435BE88C367838 /* btnLabeledClear.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = btnLabeledClear.png; sourceTree = "<group>"; };
-		6CB93191E94AA17069D348B06C73B661 /* MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
-		6DECA6008A80D4C6A6C98F0C8D5DE5FC /* Pods_RYTSketchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB93800B15A24DC3C98E1C9E9DE949B /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8055670FF0A661EADD74FE7749A0E3 /* WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYPopoverController.xcconfig; sourceTree = "<group>"; };
+		6BAABCB250DB7944264046D09C6095DC /* Pods-RYTSketchView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB6BA22B553BB76F6BDA644C9A22FBA /* UIColor-Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		6C0514E99AA61F5CCEF639871143E198 /* WYPopoverController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WYPopoverController.modulemap; sourceTree = "<group>"; };
+		6CA81806AA6E78CC9FDDBC2D34BC87CA /* UIColor-Expanded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		71E20EF5B6C30225A46C1B8E88AE4805 /* UIView+printSubviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+printSubviews.h"; sourceTree = "<group>"; };
 		72100E163A6E0695A50FB23CBD6A16F3 /* btnLabeledCopy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = btnLabeledCopy.png; sourceTree = "<group>"; };
 		723B49DDF30022780CB3CDDA82E8E75E /* penRuby-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penRuby-selected.png"; sourceTree = "<group>"; };
+		774F5CEAEBBA302400C25D169B3015F3 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7956B6AAE9716AC346CFCFCA75B6E2EF /* Pods-RYTSketchView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYTSketchView_Example-umbrella.h"; sourceTree = "<group>"; };
+		796EAE5C040E41E2A809BAE7CAAF0309 /* RYTJoystickView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTJoystickView.h; sourceTree = "<group>"; };
 		79722EB6B9640903BCB2E7C5CD040D5D /* penThick3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penThick3.png; sourceTree = "<group>"; };
+		798E8AD79706319A44702B9402BA63A0 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		7B10E5B1CB15A70F2457E66F47FB0AB5 /* CubicBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CubicBezier.h; sourceTree = "<group>"; };
 		7DC7C4C48C36C1D8739480B9D1787062 /* penThick3-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penThick3-selected.png"; sourceTree = "<group>"; };
-		7E897EAA3413A8246BA3D4665AA9F1BC /* UIView+printSubviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+printSubviews.h"; sourceTree = "<group>"; };
+		7F2D3396C9248365D608D556E0778AAC /* RYTSketchViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewControllerDelegate.h; sourceTree = "<group>"; };
+		7F81CBE8803129AB902F3243CA2FA09E /* RYTSketchView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RYTSketchView-dummy.m"; sourceTree = "<group>"; };
 		8041CD60A47D4A556B7F9EE102DA39EB /* Pods-RYTSketchView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RYTSketchView_Tests.modulemap"; sourceTree = "<group>"; };
-		81CDB617A59E728CFC7B7A83C5CD813C /* RYTSketchViewUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTSketchViewUtils.m; sourceTree = "<group>"; };
+		840C185493817356669B3CA221825D83 /* RYTSketchViewPenOptionsDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewPenOptionsDelegate.h; sourceTree = "<group>"; };
 		84287E18988A4CB4157658E5014102BE /* WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYPopoverController-dummy.m"; sourceTree = "<group>"; };
-		87F84103AFC0E711723E8DFDE741867B /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		88103536262FFEA96391074E8CD1476A /* UIColor+Hex-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+Hex-Private.xcconfig"; sourceTree = "<group>"; };
-		8816F1D4FFA044201D9B1E17C8E944F4 /* UIColor+Hex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex-prefix.pch"; sourceTree = "<group>"; };
-		8949F088CC0E3AE385E594CDCF014FCD /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "UIColor/UIColor+Hex.m"; sourceTree = "<group>"; };
+		8A038BCCDC57CD04FB590E09D116EEB4 /* RYTPenOptionsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTPenOptionsViewController.h; sourceTree = "<group>"; };
 		8BB9D7D252493B8CD22D4F2526FF59BF /* penGreen-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penGreen-selected.png"; sourceTree = "<group>"; };
-		8CAF2D1D27F044135EC10759373B7F61 /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D1DA40A6D42AC9D2BED76F699A52E92 /* CubicBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CubicBezier.h; sourceTree = "<group>"; };
 		8DD7F194BD91434C7438C8AD9D2C2B60 /* Pods-RYTSketchView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYTSketchView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8DF0B5867DFE927C0E38CAC484E1E6D2 /* penBurgundy-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penBurgundy-selected.png"; sourceTree = "<group>"; };
+		8EFEA7A13C1F013345C02BBC090A873C /* RYTSketchViewUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTSketchViewUtils.m; sourceTree = "<group>"; };
 		9129D618071FA35A23796DF2790B4098 /* Pods-RYTSketchView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYTSketchView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		922DCC49C8B23AAA3BEFE830234D3BCB /* WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
+		93C696A57E016556230044D409E0F5DF /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		950C3A777E8575EAD2067F769041AD5D /* penSteel-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penSteel-selected.png"; sourceTree = "<group>"; };
-		991CD8DBCCC9ECA6F562B98D37D0B12F /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		99F8A5BA99B356EFF86EE040603FDA21 /* UIColor+Hex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor+Hex.modulemap"; sourceTree = "<group>"; };
-		9A769BD8EB7B48E570204998BCAB1620 /* UIColor-Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
-		9BC5CDD21FB608F91AFF8B01393E7671 /* RYTJoystickViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTJoystickViewDelegate.h; sourceTree = "<group>"; };
+		953D21254468CC85B90A7C40DD66BF83 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9582A97DCC52176422A7A84E60444770 /* RYTStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTStroke.m; sourceTree = "<group>"; };
 		9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		9FF1B8F73154CEA769E9AAEC0F9C5A0E /* WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYPopoverController.xcconfig; sourceTree = "<group>"; };
+		9DD17873F1E03A379E47AE0FA5CAC46B /* RYTSketchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTSketchView.m; sourceTree = "<group>"; };
 		A0C2EF479F205BFE6E594C17955BC3FD /* RYTSketchView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYTSketchView.xcconfig; sourceTree = "<group>"; };
-		A28CC7A0866B0A14665F16CEC9057CF3 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A2E5FE72EAC737D484B3C1E85EFC490E /* RYTStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTStroke.h; sourceTree = "<group>"; };
-		A4071CA110B8B43358224094420D20D9 /* UIView+LayoutHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutHelper.m"; sourceTree = "<group>"; };
-		A426B7032235053BED1CD3C21B8E400F /* Pods-RYTSketchView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYTSketchView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A2ACFBD17A6182ACF99898F6AF8FC8DF /* UIView+printSubviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+printSubviews.m"; sourceTree = "<group>"; };
 		A650321CECB56FA82D2C6902090779AA /* penThick1-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penThick1-selected.png"; sourceTree = "<group>"; };
-		AA5BC780782491F6456B5600BCB9DC53 /* Pods-RYTSketchView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AB7F4EE02EF6210A34F02BC4FC5C037E /* Pods-RYTSketchView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYTSketchView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		ACDFEA8A4D5D09A8F1C4C10F1FE862CC /* Joystick-bg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Joystick-bg.png"; sourceTree = "<group>"; };
-		ADA598EFDF71808E04A6716AFC8A140A /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC987B92E01319CF407EA432B70A4E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4A7A55C02051DDD8C6DCF78C6D38A4 /* penThick1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penThick1.png; sourceTree = "<group>"; };
-		B25004FD88FB1B624FB7296448E5BDB9 /* RYTSketchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTSketchView.m; sourceTree = "<group>"; };
+		AFEB52B6BFDC2578356F968F2C6706F3 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		B1E6B1179B9B4A5CCF3494CE98264BB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3587A5A7DE50F40FD979FE7C84C9D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F0B3EE589B4CC860429AF8FC5FD182 /* Pods-RYTSketchView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYTSketchView_Tests-resources.sh"; sourceTree = "<group>"; };
-		B6B8FB75714A0C61BF9BE57337784259 /* RYTSketchView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RYTSketchView-dummy.m"; sourceTree = "<group>"; };
-		B7DBB0A85FAB0891698A99F728628EC0 /* RYTSketchViewUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewUtils.h; sourceTree = "<group>"; };
+		B44669712D8453C7292432D9BBF1FAAF /* RYTSketchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchView.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC94264A5FC309A1A1B83D9924626116 /* Pods_RYTSketchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C0D42B7AAD034CC4B6383B4FDAF76BB0 /* Pods-RYTSketchView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C11E39944661D5D15A53AC571DEC0A4D /* Pods-RYTSketchView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYTSketchView_Example-dummy.m"; sourceTree = "<group>"; };
+		C16B80F14041F60954B98A21E0C986EE /* Pods-RYTSketchView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C18AC3DBC560C506566AC13B2B7EF4B3 /* penGreen.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penGreen.png; sourceTree = "<group>"; };
-		C53AC4045EC0407B63CD1E44A2C56548 /* Pods-RYTSketchView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYTSketchView_Tests-dummy.m"; sourceTree = "<group>"; };
-		C5BBA87D8E698052943B8E69B8C3C711 /* UIColor+Hex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+Hex.xcconfig"; sourceTree = "<group>"; };
-		C962FFCE98A1806B5C900A1E1DFF4EAA /* Pods-RYTSketchView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYTSketchView_Example-umbrella.h"; sourceTree = "<group>"; };
 		CDAD878F4271570002704D09F8F34A16 /* WYPopoverController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-umbrella.h"; sourceTree = "<group>"; };
 		CDADF06FB61952867473BEF594AD83B8 /* penBlack.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penBlack.png; sourceTree = "<group>"; };
-		CFD03E6FE0C544AB1CE21CFD471F0226 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		D1D87E700077E1648A80F47A9E69C536 /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA03C25FC8A9EFBBAB38FEB66137EF33 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		DA6E08C29B745361AFF6CDAA195FE254 /* WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
-		DA979356D21F4714FBA5C5B1A6F0B3DE /* RYTSketchViewPenOptionsDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewPenOptionsDelegate.h; sourceTree = "<group>"; };
-		DCC12AD5012BE256661F7EFBD0B547E3 /* WYPopoverController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WYPopoverController.modulemap; sourceTree = "<group>"; };
+		D866253E765B56AFAD1CED15D8F96EEA /* RYTSketchView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RYTSketchView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAF73440C5C320C5944DF340EB55A00 /* Pods_RYTSketchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B40E0A2145C5CF665189C0BFE985B0 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYStoryboardPopoverSegue.h; path = WYPopoverController/WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
 		E32118946DDBD132AEC3AF7433387636 /* btnLabeledDelete.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = btnLabeledDelete.png; sourceTree = "<group>"; };
-		E65ECB23DD7A079928B547CD9147F348 /* RYTJoystickView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTJoystickView.h; sourceTree = "<group>"; };
-		E709D97FB93B03DECD90093AFA245C2C /* CubicBezier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CubicBezier.m; sourceTree = "<group>"; };
 		E762445C4A1B7CDB360EB3CF54ACFD31 /* WYPopoverController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
+		E88B01D2ED0A6E0762E7BF1BC3028ED4 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EAAE0943E126B56B84C405E0E9586443 /* RYTJoystickView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RYTJoystickView.m; sourceTree = "<group>"; };
 		EADD43BD120BF6AE9D609269273EB2B2 /* penSky-selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "penSky-selected.png"; sourceTree = "<group>"; };
-		EC89F58CE651C200B5FC75C9EA945D4E /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		EF7860BAD312B388CE89148344BB9F87 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F1213F60F77A73167DEC2002990D0868 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RYTSketchView-Private.xcconfig"; sourceTree = "<group>"; };
-		F44F1C4289677C2E74A8B2A14C5BE10A /* RYTSketchView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYTSketchView-umbrella.h"; sourceTree = "<group>"; };
-		F4F6FE6673934A3DBD9705EB814745D7 /* RYTSketchViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RYTSketchViewControllerDelegate.h; sourceTree = "<group>"; };
+		F7904BF6CB58494A27F5278F65E9816F /* Pods-RYTSketchView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYTSketchView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F8A54085744001E08A9730155D04A451 /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4B8BEB1AB00B6B574695F000BACC38 /* Pods-RYTSketchView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYTSketchView_Example-dummy.m"; sourceTree = "<group>"; };
 		FBE65E8669D8E796F41CDB8A88B6EBDB /* penThick2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = penThick2.png; sourceTree = "<group>"; };
 		FD6C56B420F0C94137D3B5DF02260E98 /* Pods-RYTSketchView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYTSketchView_Example-resources.sh"; sourceTree = "<group>"; };
-		FE1D7EFC04F00475300D0C82B175032A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1BBD357ED3CE977032BAFC79B26D2689 /* Frameworks */ = {
+		2B6E51DEA1D8F9ECC73E60F4DEB6BB76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343D51AFABCF95EF0AD52B04B4EDD4BC /* Foundation.framework in Frameworks */,
+				12355073F6EAA388CBF71A5E503E9820 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2195E93D8E83F2F767E800172CF511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705909AA07D7A23FA4DC5F41B0BA573E /* Foundation.framework in Frameworks */,
+				EA9CF2AFECD92761E27614B05377D9F1 /* MBProgressHUD.framework in Frameworks */,
+				1175DD2A42E907E2008EAFF3E2EF6B3A /* WYPopoverController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +286,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9061C2ACB1B3CDFED9566C515793F400 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				704C9F4A538E2476831EDB7470A846E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C7EE8F7133DB88D157F6721F94475EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,58 +293,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA8926FDC517847E082DF1F3A2A5CAA0 /* Frameworks */ = {
+		F2F7F33462A9AF840FCF46D9FCE2A03D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A66ECECBE76B47C07E4F792C70E7DD /* Foundation.framework in Frameworks */,
+				38565F6B879CBD98B5A72FD0FB984B04 /* CoreGraphics.framework in Frameworks */,
+				A46332957C94F4A4115B4FE347A06A31 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8396845300E310D001DB569D809BA02 /* Frameworks */ = {
+		F9D8FC09591D6A1262D31D99E67E3C79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB33FC3150C06259370354243B9B4C6C /* Foundation.framework in Frameworks */,
-				93BF01764DBEBF2D5DD29AA0C38D3F7F /* MBProgressHUD.framework in Frameworks */,
-				E3E19C2307F11C1CD706138C9F0C3C19 /* UIColor_Hex.framework in Frameworks */,
-				6D0B6F2EFF5F627F67A1548EA1B329BA /* WYPopoverController.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9A62B555EEF2622E5732C75CA7EB3BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6103B843D23116CD9513CFA2C23DB36D /* CoreGraphics.framework in Frameworks */,
-				AC3E55811B067DDA06BA87B4CB545469 /* Foundation.framework in Frameworks */,
+				B62E800E711A4EA2334B35D4E313A8A9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		125C6BE6901BF225DA8DEA9EE2F954A9 /* WYPopoverController */ = {
+		1A94A96B4A2D55BDBBBC246D2975F087 /* WYPopoverController */ = {
 			isa = PBXGroup;
 			children = (
 				E762445C4A1B7CDB360EB3CF54ACFD31 /* WYPopoverController.h */,
 				25FBFB78A852047AE5D7AE9014177461 /* WYPopoverController.m */,
 				E0B40E0A2145C5CF665189C0BFE985B0 /* WYStoryboardPopoverSegue.h */,
 				F1213F60F77A73167DEC2002990D0868 /* WYStoryboardPopoverSegue.m */,
-				FC364CB50E458959561208668F04B626 /* Support Files */,
+				36C682FCF1CB64D5CD8CD00FE1FEBCE6 /* Support Files */,
 			);
 			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
-		1DF7FE1763FFCC85388651F0FE550863 /* iOS */ = {
+		36C682FCF1CB64D5CD8CD00FE1FEBCE6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */,
-				BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */,
-				66098635C26815FEB3EDFC55E0E5B6CE /* QuartzCore.framework */,
-				23E9855266685110706BE9B2172551F5 /* UIKit.framework */,
+				15EBD901CE2245C6FE62CE4DF0A52465 /* Info.plist */,
+				6C0514E99AA61F5CCEF639871143E198 /* WYPopoverController.modulemap */,
+				6A8055670FF0A661EADD74FE7749A0E3 /* WYPopoverController.xcconfig */,
+				3EE256E5A267F1038018A0F624205B5B /* WYPopoverController-Private.xcconfig */,
+				84287E18988A4CB4157658E5014102BE /* WYPopoverController-dummy.m */,
+				922DCC49C8B23AAA3BEFE830234D3BCB /* WYPopoverController-prefix.pch */,
+				CDAD878F4271570002704D09F8F34A16 /* WYPopoverController-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/WYPopoverController";
 			sourceTree = "<group>";
 		};
 		39E7DB18475713EEAFAB1959C90194E8 /* Support Files */ = {
@@ -390,53 +347,38 @@
 				4ABFE4543994219554421DF544B32EBD /* RYTSketchView.modulemap */,
 				A0C2EF479F205BFE6E594C17955BC3FD /* RYTSketchView.xcconfig */,
 				F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */,
-				B6B8FB75714A0C61BF9BE57337784259 /* RYTSketchView-dummy.m */,
+				7F81CBE8803129AB902F3243CA2FA09E /* RYTSketchView-dummy.m */,
 				1DE1503FF8325B135012E455CE950F0E /* RYTSketchView-prefix.pch */,
-				F44F1C4289677C2E74A8B2A14C5BE10A /* RYTSketchView-umbrella.h */,
+				1CF52F007273EA7DEB57DCB2FC3DAD31 /* RYTSketchView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/RYTSketchView";
 			sourceTree = "<group>";
 		};
-		3A282086FD79DCBA5D0BC46CB418A228 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2CD5DDF1E347EE01F42CFB1782780758 /* Info.plist */,
-				99F8A5BA99B356EFF86EE040603FDA21 /* UIColor+Hex.modulemap */,
-				C5BBA87D8E698052943B8E69B8C3C711 /* UIColor+Hex.xcconfig */,
-				88103536262FFEA96391074E8CD1476A /* UIColor+Hex-Private.xcconfig */,
-				0A7CD2A847EEA5BD5767B532AAFA77FF /* UIColor+Hex-dummy.m */,
-				8816F1D4FFA044201D9B1E17C8E944F4 /* UIColor+Hex-prefix.pch */,
-				45BF3ADA87DE968E4CAC5A3F40027238 /* UIColor+Hex-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIColor+Hex";
-			sourceTree = "<group>";
-		};
 		3E43364F876E9930076B0C428E9134DC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8D1DA40A6D42AC9D2BED76F699A52E92 /* CubicBezier.h */,
-				E709D97FB93B03DECD90093AFA245C2C /* CubicBezier.m */,
-				E65ECB23DD7A079928B547CD9147F348 /* RYTJoystickView.h */,
-				51EA6D1A368F7711101F32416E640C88 /* RYTJoystickView.m */,
-				9BC5CDD21FB608F91AFF8B01393E7671 /* RYTJoystickViewDelegate.h */,
-				5FD3645823AF6EF888061C78AB2A7E1D /* RYTPenOptionsViewController.h */,
-				20CB82CAF8BEA453FB2611C4711C5729 /* RYTPenOptionsViewController.m */,
-				68D4709A59741ACBCC2D099780D5BE78 /* RYTSketchView.h */,
-				B25004FD88FB1B624FB7296448E5BDB9 /* RYTSketchView.m */,
-				F4F6FE6673934A3DBD9705EB814745D7 /* RYTSketchViewControllerDelegate.h */,
-				DA979356D21F4714FBA5C5B1A6F0B3DE /* RYTSketchViewPenOptionsDelegate.h */,
-				B7DBB0A85FAB0891698A99F728628EC0 /* RYTSketchViewUtils.h */,
-				81CDB617A59E728CFC7B7A83C5CD813C /* RYTSketchViewUtils.m */,
-				A2E5FE72EAC737D484B3C1E85EFC490E /* RYTStroke.h */,
-				044F20176747247CED17FBD1197B15EC /* RYTStroke.m */,
-				9A769BD8EB7B48E570204998BCAB1620 /* UIColor-Expanded.h */,
-				18310E5CB2F376054345E60531A675F1 /* UIColor-Expanded.m */,
-				49CA0ABACA090EB3EB96D1306C90B863 /* UIView+LayoutHelper.h */,
-				A4071CA110B8B43358224094420D20D9 /* UIView+LayoutHelper.m */,
-				7E897EAA3413A8246BA3D4665AA9F1BC /* UIView+printSubviews.h */,
-				2DA0A8EDA37EE14F017087DD571C40E1 /* UIView+printSubviews.m */,
+				7B10E5B1CB15A70F2457E66F47FB0AB5 /* CubicBezier.h */,
+				11BB6BA21DFDFCAAEED0F3E0FF1704EB /* CubicBezier.m */,
+				796EAE5C040E41E2A809BAE7CAAF0309 /* RYTJoystickView.h */,
+				EAAE0943E126B56B84C405E0E9586443 /* RYTJoystickView.m */,
+				58B20067169C96C79D860AAF4ACCC77D /* RYTJoystickViewDelegate.h */,
+				8A038BCCDC57CD04FB590E09D116EEB4 /* RYTPenOptionsViewController.h */,
+				65AC98E1C8FD0E71C9056767B0E2A2E4 /* RYTPenOptionsViewController.m */,
+				B44669712D8453C7292432D9BBF1FAAF /* RYTSketchView.h */,
+				9DD17873F1E03A379E47AE0FA5CAC46B /* RYTSketchView.m */,
+				7F2D3396C9248365D608D556E0778AAC /* RYTSketchViewControllerDelegate.h */,
+				840C185493817356669B3CA221825D83 /* RYTSketchViewPenOptionsDelegate.h */,
+				42E753E670B2B0FB6A6309CE68E2E879 /* RYTSketchViewUtils.h */,
+				8EFEA7A13C1F013345C02BBC090A873C /* RYTSketchViewUtils.m */,
+				12C4D9A012B2EA969506307DB7EBF0BB /* RYTStroke.h */,
+				9582A97DCC52176422A7A84E60444770 /* RYTStroke.m */,
+				6BB6BA22B553BB76F6BDA644C9A22FBA /* UIColor-Expanded.h */,
+				6CA81806AA6E78CC9FDDBC2D34BC87CA /* UIColor-Expanded.m */,
+				1D314542DE17D2793540A56F161D3C49 /* UIView+LayoutHelper.h */,
+				2AF7FF7DB9670D38E0AE069A6DAC3682 /* UIView+LayoutHelper.m */,
+				71E20EF5B6C30225A46C1B8E88AE4805 /* UIView+printSubviews.h */,
+				A2ACFBD17A6182ACF99898F6AF8FC8DF /* UIView+printSubviews.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -449,13 +391,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6CF42F89F14882E482C36203FAD8127E /* UIColor */ = {
+		446A570579DF5D1A1F236D0AAC7E31D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				149F1A1DC59BCC75EBA56F06ECA57ACF /* UIColor+Hex.h */,
-				8949F088CC0E3AE385E594CDCF014FCD /* UIColor+Hex.m */,
+				774F5CEAEBBA302400C25D169B3015F3 /* MBProgressHUD.framework */,
+				F8A54085744001E08A9730155D04A451 /* WYPopoverController.framework */,
+				7977DD79FEE485D87324694D593E1DC7 /* iOS */,
 			);
-			name = UIColor;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7173B68622F1659066B600F5DDABA4EE /* Pods-RYTSketchView_Example */ = {
@@ -465,51 +408,26 @@
 				4414567689252E80109C20EEC5C2B851 /* Pods-RYTSketchView_Example.modulemap */,
 				2C7F6E7153093C0F55C23C4C388D0A47 /* Pods-RYTSketchView_Example-acknowledgements.markdown */,
 				607CA0590DE616E5B626D63C8AFCEFB8 /* Pods-RYTSketchView_Example-acknowledgements.plist */,
-				C11E39944661D5D15A53AC571DEC0A4D /* Pods-RYTSketchView_Example-dummy.m */,
+				FB4B8BEB1AB00B6B574695F000BACC38 /* Pods-RYTSketchView_Example-dummy.m */,
 				AB7F4EE02EF6210A34F02BC4FC5C037E /* Pods-RYTSketchView_Example-frameworks.sh */,
 				FD6C56B420F0C94137D3B5DF02260E98 /* Pods-RYTSketchView_Example-resources.sh */,
-				C962FFCE98A1806B5C900A1E1DFF4EAA /* Pods-RYTSketchView_Example-umbrella.h */,
-				AA5BC780782491F6456B5600BCB9DC53 /* Pods-RYTSketchView_Example.debug.xcconfig */,
-				A28CC7A0866B0A14665F16CEC9057CF3 /* Pods-RYTSketchView_Example.release.xcconfig */,
+				7956B6AAE9716AC346CFCFCA75B6E2EF /* Pods-RYTSketchView_Example-umbrella.h */,
+				C16B80F14041F60954B98A21E0C986EE /* Pods-RYTSketchView_Example.debug.xcconfig */,
+				E88B01D2ED0A6E0762E7BF1BC3028ED4 /* Pods-RYTSketchView_Example.release.xcconfig */,
 			);
 			name = "Pods-RYTSketchView_Example";
 			path = "Target Support Files/Pods-RYTSketchView_Example";
 			sourceTree = "<group>";
 		};
-		734C0A288C7BD6D5A056142D43E68063 /* Frameworks */ = {
+		7977DD79FEE485D87324694D593E1DC7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ADA598EFDF71808E04A6716AFC8A140A /* MBProgressHUD.framework */,
-				D1D87E700077E1648A80F47A9E69C536 /* UIColor_Hex.framework */,
-				8CAF2D1D27F044135EC10759373B7F61 /* WYPopoverController.framework */,
-				1DF7FE1763FFCC85388651F0FE550863 /* iOS */,
+				9BF275127C5F0C2ADA042ED1FB596F28 /* CoreGraphics.framework */,
+				BDA29B5932EC666AACE72814E7C65693 /* Foundation.framework */,
+				66098635C26815FEB3EDFC55E0E5B6CE /* QuartzCore.framework */,
+				23E9855266685110706BE9B2172551F5 /* UIKit.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		742D8652033290097F1E45BAF8DD7283 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				40ECE02ACF1007056B44DFE1C0C8A086 /* Info.plist */,
-				0DF7AC7F831AA75BEF0371338FE82EF9 /* MBProgressHUD.modulemap */,
-				CFD03E6FE0C544AB1CE21CFD471F0226 /* MBProgressHUD.xcconfig */,
-				6CB93191E94AA17069D348B06C73B661 /* MBProgressHUD-Private.xcconfig */,
-				87F84103AFC0E711723E8DFDE741867B /* MBProgressHUD-dummy.m */,
-				EC89F58CE651C200B5FC75C9EA945D4E /* MBProgressHUD-prefix.pch */,
-				991CD8DBCCC9ECA6F562B98D37D0B12F /* MBProgressHUD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
-			sourceTree = "<group>";
-		};
-		75E09F61686FBC6612029FF9DA1A8FE0 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				DA03C25FC8A9EFBBAB38FEB66137EF33 /* MBProgressHUD.h */,
-				EF7860BAD312B388CE89148344BB9F87 /* MBProgressHUD.m */,
-				742D8652033290097F1E45BAF8DD7283 /* Support Files */,
-			);
-			path = MBProgressHUD;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -517,8 +435,8 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				445F36EBF65C3E4A01D1FAD14DB112E0 /* Development Pods */,
-				734C0A288C7BD6D5A056142D43E68063 /* Frameworks */,
-				B82B2EA858B3DEC761EC4198E112E243 /* Pods */,
+				446A570579DF5D1A1F236D0AAC7E31D4 /* Frameworks */,
+				945A14C40D7D6B109AC6E8B7E5A5CC38 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				E8DC2E983141B8299C7E247F172D7DE9 /* Targets Support Files */,
 			);
@@ -532,21 +450,21 @@
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		8F4E56F0D09616DFAF1051BC45A6F9F7 /* UIColor+Hex */ = {
-			isa = PBXGroup;
-			children = (
-				3A282086FD79DCBA5D0BC46CB418A228 /* Support Files */,
-				6CF42F89F14882E482C36203FAD8127E /* UIColor */,
-			);
-			path = "UIColor+Hex";
-			sourceTree = "<group>";
-		};
 		90411B262D3FAB481CFCE2B8C080045F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				C6E54769C1BA9B1F7F1EAEBC27D00A6A /* Pod */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		945A14C40D7D6B109AC6E8B7E5A5CC38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99392217C3758EFC851880F8B7738155 /* MBProgressHUD */,
+				1A94A96B4A2D55BDBBBC246D2975F087 /* WYPopoverController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		98A3E16A93E9AB1B0260F5980184403C /* RYTSketchView */ = {
@@ -560,6 +478,16 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		99392217C3758EFC851880F8B7738155 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5B7062DCBA0CCF9296ACF0F6B37BE48F /* MBProgressHUD.h */,
+				3C8C9288B38BD84CA165E12A54088197 /* MBProgressHUD.m */,
+				DF0C00FD881A26993FB611D5C7B8ABBD /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		A932912054C545CCFC6FCB0B04DC6AC1 /* Pods-RYTSketchView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,12 +495,12 @@
 				8041CD60A47D4A556B7F9EE102DA39EB /* Pods-RYTSketchView_Tests.modulemap */,
 				9129D618071FA35A23796DF2790B4098 /* Pods-RYTSketchView_Tests-acknowledgements.markdown */,
 				38B052FE246A091A47280ACDDE9E59FE /* Pods-RYTSketchView_Tests-acknowledgements.plist */,
-				C53AC4045EC0407B63CD1E44A2C56548 /* Pods-RYTSketchView_Tests-dummy.m */,
+				62F41FCAA4DB429FD173ED1069065A05 /* Pods-RYTSketchView_Tests-dummy.m */,
 				8DD7F194BD91434C7438C8AD9D2C2B60 /* Pods-RYTSketchView_Tests-frameworks.sh */,
 				B3F0B3EE589B4CC860429AF8FC5FD182 /* Pods-RYTSketchView_Tests-resources.sh */,
-				A426B7032235053BED1CD3C21B8E400F /* Pods-RYTSketchView_Tests-umbrella.h */,
-				14F771BAB71F63138F38A9B8861B2648 /* Pods-RYTSketchView_Tests.debug.xcconfig */,
-				C0D42B7AAD034CC4B6383B4FDAF76BB0 /* Pods-RYTSketchView_Tests.release.xcconfig */,
+				F7904BF6CB58494A27F5278F65E9816F /* Pods-RYTSketchView_Tests-umbrella.h */,
+				6BAABCB250DB7944264046D09C6095DC /* Pods-RYTSketchView_Tests.debug.xcconfig */,
+				3B03339D910EFA39F0998D0F42CC1F0B /* Pods-RYTSketchView_Tests.release.xcconfig */,
 			);
 			name = "Pods-RYTSketchView_Tests";
 			path = "Target Support Files/Pods-RYTSketchView_Tests";
@@ -609,16 +537,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		B82B2EA858B3DEC761EC4198E112E243 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75E09F61686FBC6612029FF9DA1A8FE0 /* MBProgressHUD */,
-				8F4E56F0D09616DFAF1051BC45A6F9F7 /* UIColor+Hex */,
-				125C6BE6901BF225DA8DEA9EE2F954A9 /* WYPopoverController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C6E54769C1BA9B1F7F1EAEBC27D00A6A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,15 +548,29 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C334124E450510D48FA2640431B99F3 /* MBProgressHUD.framework */,
-				13C8D6F6FAEFA108AF9283210DA112DA /* Pods_RYTSketchView_Example.framework */,
-				6DECA6008A80D4C6A6C98F0C8D5DE5FC /* Pods_RYTSketchView_Tests.framework */,
+				953D21254468CC85B90A7C40DD66BF83 /* MBProgressHUD.framework */,
+				BC94264A5FC309A1A1B83D9924626116 /* Pods_RYTSketchView_Example.framework */,
+				DDAF73440C5C320C5944DF340EB55A00 /* Pods_RYTSketchView_Tests.framework */,
 				688074359F78D768004DD22D36C1F638 /* RYTSketchView.bundle */,
-				6A3330DB38AEACDF82C0CF787429723F /* RYTSketchView.framework */,
-				6EB93800B15A24DC3C98E1C9E9DE949B /* UIColor_Hex.framework */,
+				D866253E765B56AFAD1CED15D8F96EEA /* RYTSketchView.framework */,
 				15F0AC2FC6D06118A6196A89112145AE /* WYPopoverController.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0C00FD881A26993FB611D5C7B8ABBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6B1179B9B4A5CCF3494CE98264BB9 /* Info.plist */,
+				798E8AD79706319A44702B9402BA63A0 /* MBProgressHUD.modulemap */,
+				17D5C727AAF2F41C23AF22AD5C883246 /* MBProgressHUD.xcconfig */,
+				368D2DC392F84E893A4557AE01120E8A /* MBProgressHUD-Private.xcconfig */,
+				AFEB52B6BFDC2578356F968F2C6706F3 /* MBProgressHUD-dummy.m */,
+				93C696A57E016556230044D409E0F5DF /* MBProgressHUD-prefix.pch */,
+				0AD589275C335CC57DF1A301062D6A3E /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
 		E8DC2E983141B8299C7E247F172D7DE9 /* Targets Support Files */ = {
@@ -650,66 +582,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FC364CB50E458959561208668F04B626 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE1D7EFC04F00475300D0C82B175032A /* Info.plist */,
-				DCC12AD5012BE256661F7EFBD0B547E3 /* WYPopoverController.modulemap */,
-				9FF1B8F73154CEA769E9AAEC0F9C5A0E /* WYPopoverController.xcconfig */,
-				3EE256E5A267F1038018A0F624205B5B /* WYPopoverController-Private.xcconfig */,
-				84287E18988A4CB4157658E5014102BE /* WYPopoverController-dummy.m */,
-				DA6E08C29B745361AFF6CDAA195FE254 /* WYPopoverController-prefix.pch */,
-				CDAD878F4271570002704D09F8F34A16 /* WYPopoverController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WYPopoverController";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		155C4683BBBB2F75C12026255ABE675D /* Headers */ = {
+		6AF47BC5038ED8AB0451AB0B80BC2352 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41F757F7468EB47418F9CDE8995FE1B /* Pods-RYTSketchView_Example-umbrella.h in Headers */,
+				8A4AC4948FB8BED2802061CA9DDC0CC2 /* CubicBezier.h in Headers */,
+				F10C7FFE9FAADB0D467D1E335F5218B8 /* RYTJoystickView.h in Headers */,
+				E9CD8BBC12C77FD1C86395E98F0CDFF2 /* RYTJoystickViewDelegate.h in Headers */,
+				D1162F823A6477A5CD83E55B524ED768 /* RYTPenOptionsViewController.h in Headers */,
+				3BECA15A595E3E690B3345533F04E588 /* RYTSketchView-umbrella.h in Headers */,
+				3A68D911E49416808C42E604C2D2CCE3 /* RYTSketchView.h in Headers */,
+				A3B1B39074ECE6FDD4BD0731B4A256F5 /* RYTSketchViewControllerDelegate.h in Headers */,
+				9887EE5521ED9B356930250E737E2A0A /* RYTSketchViewPenOptionsDelegate.h in Headers */,
+				E4B8661785A7B0CFC1DBD25922ECDE01 /* RYTSketchViewUtils.h in Headers */,
+				C73F91D5BF134968AD689D3063EAD5C1 /* RYTStroke.h in Headers */,
+				EA071B39BDB8544567309C5BB7639850 /* UIColor-Expanded.h in Headers */,
+				D58BFE03379D40E2CB085C4C037DD2ED /* UIView+LayoutHelper.h in Headers */,
+				E03C4668C72DD6A8DCE49F3B1F654D8C /* UIView+printSubviews.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32821F1DBB53D5196760F98F82A0F05E /* Headers */ = {
+		7538AD3165F2380996FE2CE8DBB07676 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CA63CE726DF167544C26AD3CEE9256E /* Pods-RYTSketchView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CEE3E8F862049A0775B6DFE4856F960 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E66849D6E8AD2FB6531E674A3ACEE00 /* CubicBezier.h in Headers */,
-				E674393B94DA064E27C2B23C43D7B9AB /* RYTJoystickView.h in Headers */,
-				84958FB47624119F6FDAF753BF545E56 /* RYTJoystickViewDelegate.h in Headers */,
-				3EE9F4B6A7A7B2F6DFBA46A6BC840A5E /* RYTPenOptionsViewController.h in Headers */,
-				2D868837C03317CC458C9F1EC51CFCD5 /* RYTSketchView-umbrella.h in Headers */,
-				4BB7A9FD6CC2084A21F5E4036B5A619C /* RYTSketchView.h in Headers */,
-				22792A106F3490ED52E6B8A8A04812A1 /* RYTSketchViewControllerDelegate.h in Headers */,
-				FA11476DDE07F64C9039C04A649B23EA /* RYTSketchViewPenOptionsDelegate.h in Headers */,
-				151C6E9D0674BCAE6D3F0F42A0FEED82 /* RYTSketchViewUtils.h in Headers */,
-				D105312C8DB6FB01621D9E01483D17F8 /* RYTStroke.h in Headers */,
-				A0FB0961C51C773B3822C0ECF107FAD4 /* UIColor-Expanded.h in Headers */,
-				DBB0D1337740C90E9FF83B7087D98931 /* UIView+LayoutHelper.h in Headers */,
-				AA6A012B43DFD3290EE6C40FC384D5AB /* UIView+printSubviews.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		94BB06A29948E76BFB43BDA49BBE0FD0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACFCCF6B703BA8994D30C3A04D1CE039 /* MBProgressHUD-umbrella.h in Headers */,
-				81BD83A99B2000A43F36F29EF98F65AB /* MBProgressHUD.h in Headers */,
+				2818EC8422CBCAB34DD66ECA2481756B /* MBProgressHUD-umbrella.h in Headers */,
+				2979DAA0F1446BD8799AC1F5AA98CE5E /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,57 +624,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D552967F2CAA4D8D761836F71AD77733 /* Headers */ = {
+		9FC68B3A7189E969E0FFC2F4A57820F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ACBB8A82EEBDA32FD4C2FF70C27C037 /* UIColor+Hex-umbrella.h in Headers */,
-				468BE225094A6DEE889F87436172E7AE /* UIColor+Hex.h in Headers */,
+				19F11BF383702871A1927298B9D8941D /* Pods-RYTSketchView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB261C599021722D6447E355DA2AF971 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5057D3717AA861AA8A0911EBFFCB802D /* Pods-RYTSketchView_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1619CFBD9DAAE6541050C4A739556211 /* UIColor+Hex */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5683EF8A650F65301C71D44CD363010A /* Build configuration list for PBXNativeTarget "UIColor+Hex" */;
-			buildPhases = (
-				FE23A2CB975332E92DDB3BEB15539688 /* Sources */,
-				CA8926FDC517847E082DF1F3A2A5CAA0 /* Frameworks */,
-				D552967F2CAA4D8D761836F71AD77733 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UIColor+Hex";
-			productName = "UIColor+Hex";
-			productReference = 6EB93800B15A24DC3C98E1C9E9DE949B /* UIColor_Hex.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1E976D4CFE0172F2B420632647E2ADC6 /* RYTSketchView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5816FE47263C13ABE2887D00E6EE63F7 /* Build configuration list for PBXNativeTarget "RYTSketchView" */;
-			buildPhases = (
-				4FDF388F5F4714A048B07A71AD3D9281 /* Sources */,
-				E8396845300E310D001DB569D809BA02 /* Frameworks */,
-				211FC31EB4FFFD81D87953932B9961EB /* Resources */,
-				6CEE3E8F862049A0775B6DFE4856F960 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				61AF0890FB94A18ECE5B72AF48966EF7 /* PBXTargetDependency */,
-				979EF5DEA02B58F322F95D104928F9C6 /* PBXTargetDependency */,
-				1AA23D0C22F4182DAE025FA05817EC44 /* PBXTargetDependency */,
-				74A0973EDA427EB9C893D27B39F1CCD1 /* PBXTargetDependency */,
-			);
-			name = RYTSketchView;
-			productName = RYTSketchView;
-			productReference = 6A3330DB38AEACDF82C0CF787429723F /* RYTSketchView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		2B112CEBC317CEBA480E031B6BA8EA1C /* RYTSketchView-RYTSketchView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C51F7E968105A03791B1EB28792E2F39 /* Build configuration list for PBXNativeTarget "RYTSketchView-RYTSketchView" */;
@@ -791,46 +660,65 @@
 			productReference = 688074359F78D768004DD22D36C1F638 /* RYTSketchView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		80C51DE03067C81DDFDBBF73F3791EC6 /* Pods-RYTSketchView_Tests */ = {
+		4395E2DE84D3099DCA6526B0EE1748EE /* RYTSketchView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AC5E01F531B71FF2A4AC38766175120 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Tests" */;
+			buildConfigurationList = D0FDB02524E8A21A092CFB38CB9453DD /* Build configuration list for PBXNativeTarget "RYTSketchView" */;
 			buildPhases = (
-				175F09681EC11FF95932C32CA895AC12 /* Sources */,
-				1BBD357ED3CE977032BAFC79B26D2689 /* Frameworks */,
-				32821F1DBB53D5196760F98F82A0F05E /* Headers */,
+				E0366297EB2A672ECF85DF60F23A143E /* Sources */,
+				4A2195E93D8E83F2F767E800172CF511 /* Frameworks */,
+				28217BE22274566AE4A38ED986D9DC82 /* Resources */,
+				6AF47BC5038ED8AB0451AB0B80BC2352 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				646D9B74217BC6B4E30B21A166F8671B /* PBXTargetDependency */,
-				B774CC8E92B7977EF437FE093B2B0580 /* PBXTargetDependency */,
-				BD6884287EB50AF764A30761CCF14D15 /* PBXTargetDependency */,
-				B1D6C022D4BF346E8E3CE4B90C022A64 /* PBXTargetDependency */,
+				68A846023EF357D00C54501ED274DAC0 /* PBXTargetDependency */,
+				DADA6281B475FEF67A237E51B9278889 /* PBXTargetDependency */,
+				D5AEA0A3C485477995A1239816686B87 /* PBXTargetDependency */,
 			);
-			name = "Pods-RYTSketchView_Tests";
-			productName = "Pods-RYTSketchView_Tests";
-			productReference = 6DECA6008A80D4C6A6C98F0C8D5DE5FC /* Pods_RYTSketchView_Tests.framework */;
+			name = RYTSketchView;
+			productName = RYTSketchView;
+			productReference = D866253E765B56AFAD1CED15D8F96EEA /* RYTSketchView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		84752F6C1EC9398659CE0B36DA39A07F /* Pods-RYTSketchView_Example */ = {
+		4D330362FECA90D0F61DC9EA459D1F92 /* Pods-RYTSketchView_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F3E34B6C6BEBC785D22F84EE9575C81 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Example" */;
+			buildConfigurationList = 5019BB714C29FB59F8A17AAC61F34EE2 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Example" */;
 			buildPhases = (
-				6183E41E61519191DAF8D08682380B02 /* Sources */,
-				9061C2ACB1B3CDFED9566C515793F400 /* Frameworks */,
-				155C4683BBBB2F75C12026255ABE675D /* Headers */,
+				9B31D42E1A5D91D0C9A3700F8DEB8AAA /* Sources */,
+				F9D8FC09591D6A1262D31D99E67E3C79 /* Frameworks */,
+				9FC68B3A7189E969E0FFC2F4A57820F7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				192431A5C5C4C7C7E22E86D75A388339 /* PBXTargetDependency */,
-				FADA7A10F277F2B35028A74BA6F5AAC2 /* PBXTargetDependency */,
-				D02F087B9EF11687357BF87AC76BF4E1 /* PBXTargetDependency */,
-				DA273481D0C9B3E823B91E0AA29D26F3 /* PBXTargetDependency */,
+				24721459D5E860F9CAAB0E2D9F77743C /* PBXTargetDependency */,
+				D3E1BAE26FE708C0D6A19011B3D59D9C /* PBXTargetDependency */,
+				8B8FC0EBB8ED4F504CAA136DBFA30F58 /* PBXTargetDependency */,
 			);
 			name = "Pods-RYTSketchView_Example";
 			productName = "Pods-RYTSketchView_Example";
-			productReference = 13C8D6F6FAEFA108AF9283210DA112DA /* Pods_RYTSketchView_Example.framework */;
+			productReference = BC94264A5FC309A1A1B83D9924626116 /* Pods_RYTSketchView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A6F40BE115B754CA78E5AD98689328E /* Pods-RYTSketchView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B6163E092BE61D7BFEB225B689BA4 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Tests" */;
+			buildPhases = (
+				DFD6F46FF39D3CD598A227AC9181D099 /* Sources */,
+				2B6E51DEA1D8F9ECC73E60F4DEB6BB76 /* Frameworks */,
+				EB261C599021722D6447E355DA2AF971 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F5816E656745AF757C9E2A5A5F8099A /* PBXTargetDependency */,
+				07629646EBEBBE1F402EE6CFF3E57D27 /* PBXTargetDependency */,
+				50F95D027992200EECF880D4F0CD27DD /* PBXTargetDependency */,
+			);
+			name = "Pods-RYTSketchView_Tests";
+			productName = "Pods-RYTSketchView_Tests";
+			productReference = DDAF73440C5C320C5944DF340EB55A00 /* Pods_RYTSketchView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */ = {
@@ -850,13 +738,13 @@
 			productReference = 15F0AC2FC6D06118A6196A89112145AE /* WYPopoverController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF0E324366FFA2F237BDAA36C6B3397F /* MBProgressHUD */ = {
+		C16B573CFBA3483B0BED618DB9E0444A /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C3DAE2555FC22500E312EE041B18701 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildConfigurationList = 8C5735977A3ED8301CD112B3B19DAF60 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
 			buildPhases = (
-				16F2B3528FBD288978EB7679010670A4 /* Sources */,
-				E9A62B555EEF2622E5732C75CA7EB3BE /* Frameworks */,
-				94BB06A29948E76BFB43BDA49BBE0FD0 /* Headers */,
+				B7A1A5E75E2B2753186480C8C7616BD1 /* Sources */,
+				F2F7F33462A9AF840FCF46D9FCE2A03D /* Frameworks */,
+				7538AD3165F2380996FE2CE8DBB07676 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -864,7 +752,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 4C334124E450510D48FA2640431B99F3 /* MBProgressHUD.framework */;
+			productReference = 953D21254468CC85B90A7C40DD66BF83 /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -888,23 +776,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF0E324366FFA2F237BDAA36C6B3397F /* MBProgressHUD */,
-				84752F6C1EC9398659CE0B36DA39A07F /* Pods-RYTSketchView_Example */,
-				80C51DE03067C81DDFDBBF73F3791EC6 /* Pods-RYTSketchView_Tests */,
-				1E976D4CFE0172F2B420632647E2ADC6 /* RYTSketchView */,
+				C16B573CFBA3483B0BED618DB9E0444A /* MBProgressHUD */,
+				4D330362FECA90D0F61DC9EA459D1F92 /* Pods-RYTSketchView_Example */,
+				7A6F40BE115B754CA78E5AD98689328E /* Pods-RYTSketchView_Tests */,
+				4395E2DE84D3099DCA6526B0EE1748EE /* RYTSketchView */,
 				2B112CEBC317CEBA480E031B6BA8EA1C /* RYTSketchView-RYTSketchView */,
-				1619CFBD9DAAE6541050C4A739556211 /* UIColor+Hex */,
 				95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		211FC31EB4FFFD81D87953932B9961EB /* Resources */ = {
+		28217BE22274566AE4A38ED986D9DC82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7310AA66A1CF4105E48F9DC2D7460D12 /* RYTSketchView.bundle in Resources */,
+				D8B5057CEB65FC9103255A9861005001 /* RYTSketchView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,52 +829,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		16F2B3528FBD288978EB7679010670A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8A269F3A65F513378D5B04D452F9F95 /* MBProgressHUD-dummy.m in Sources */,
-				61E05739BE25DCB72EC3924FBD2F9AC4 /* MBProgressHUD.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		175F09681EC11FF95932C32CA895AC12 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F634B3542DBFEEC73BA972DA973937D /* Pods-RYTSketchView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FDF388F5F4714A048B07A71AD3D9281 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				512C36E282905F19F9F1E0547CDD7B42 /* CubicBezier.m in Sources */,
-				F3FFF72280FCA57416B078639DD9670F /* RYTJoystickView.m in Sources */,
-				9AFC9D7F113E0379F370033527E78ABB /* RYTPenOptionsViewController.m in Sources */,
-				F3EB4BAE0E30C966BB0A5BC2FCC80C91 /* RYTSketchView-dummy.m in Sources */,
-				AE247F8129F76EEEC675F40B321ED8B4 /* RYTSketchView.m in Sources */,
-				B5884278F738F031089DBB334ECACEC8 /* RYTSketchViewUtils.m in Sources */,
-				BCA03021F4426018E469BAD8A06827BA /* RYTStroke.m in Sources */,
-				2EA0755EF06C2203CA2F0598E8334225 /* UIColor-Expanded.m in Sources */,
-				DC8C0DAA29D058CF2E9F3350ECAD5CB3 /* UIView+LayoutHelper.m in Sources */,
-				A8F6FCCF0CD7876B9D48F783F834F609 /* UIView+printSubviews.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6183E41E61519191DAF8D08682380B02 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAE9A59B20AA7DAE77D16848C3C5F1A9 /* Pods-RYTSketchView_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		935AD36B87811530716CDA8CCA555FB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B31D42E1A5D91D0C9A3700F8DEB8AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573221491F6D1AF70A00326452D253A /* Pods-RYTSketchView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A1A5E75E2B2753186480C8C7616BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DDACB014AD7879E3C34FD7417E0362 /* MBProgressHUD-dummy.m in Sources */,
+				275B4D52162B0C9E025F8D7648742921 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,122 +863,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE23A2CB975332E92DDB3BEB15539688 /* Sources */ = {
+		DFD6F46FF39D3CD598A227AC9181D099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F3C677496E4D0A92FD1695BDAACC6C /* UIColor+Hex-dummy.m in Sources */,
-				3A8104BE97C75A74C865F3DFC659E70A /* UIColor+Hex.m in Sources */,
+				485024A1DE0FB69E2586210B60905C0C /* Pods-RYTSketchView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0366297EB2A672ECF85DF60F23A143E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96940113EEFDC549DAD1BAFB89C3BD9E /* CubicBezier.m in Sources */,
+				C01215ED2A60005EE5D4D9DAE3B7475D /* RYTJoystickView.m in Sources */,
+				AC5B7A24121ADF1F0AF3D507AC946CB5 /* RYTPenOptionsViewController.m in Sources */,
+				378FF2F8C227C75A83CF555FC8D997BD /* RYTSketchView-dummy.m in Sources */,
+				AA77C74C2A901B2743C6E83693EEFE98 /* RYTSketchView.m in Sources */,
+				E390F2F41073D5FB7E279C4EB17C9C96 /* RYTSketchViewUtils.m in Sources */,
+				3B9841C2E05F989071E37829670365E3 /* RYTStroke.m in Sources */,
+				E4857A9DBC24DD278C9E2CB547E945AF /* UIColor-Expanded.m in Sources */,
+				B73EA20BF25B9239C7ADAE9DBC6AA53F /* UIView+LayoutHelper.m in Sources */,
+				C0E02293D3CDF550FAD55EDD62FB9054 /* UIView+printSubviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		192431A5C5C4C7C7E22E86D75A388339 /* PBXTargetDependency */ = {
+		07629646EBEBBE1F402EE6CFF3E57D27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RYTSketchView;
+			target = 4395E2DE84D3099DCA6526B0EE1748EE /* RYTSketchView */;
+			targetProxy = E3788822A0DB7D7F9DF7AC6D8EA9B625 /* PBXContainerItemProxy */;
+		};
+		24721459D5E860F9CAAB0E2D9F77743C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
-			target = FF0E324366FFA2F237BDAA36C6B3397F /* MBProgressHUD */;
-			targetProxy = 5B8D198F089F3B9294ED5D908F081E04 /* PBXContainerItemProxy */;
+			target = C16B573CFBA3483B0BED618DB9E0444A /* MBProgressHUD */;
+			targetProxy = D558761811BD75B8818D1A9963699E77 /* PBXContainerItemProxy */;
 		};
-		1AA23D0C22F4182DAE025FA05817EC44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor+Hex";
-			target = 1619CFBD9DAAE6541050C4A739556211 /* UIColor+Hex */;
-			targetProxy = 6135935710A4255560BBE59D8DDFA85B /* PBXContainerItemProxy */;
-		};
-		61AF0890FB94A18ECE5B72AF48966EF7 /* PBXTargetDependency */ = {
+		3F5816E656745AF757C9E2A5A5F8099A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
-			target = FF0E324366FFA2F237BDAA36C6B3397F /* MBProgressHUD */;
-			targetProxy = 5EFE7DDEFF8475221CC41A0FC637F19C /* PBXContainerItemProxy */;
+			target = C16B573CFBA3483B0BED618DB9E0444A /* MBProgressHUD */;
+			targetProxy = 00A794D4CE21E7515171B09494500E5B /* PBXContainerItemProxy */;
 		};
-		646D9B74217BC6B4E30B21A166F8671B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = FF0E324366FFA2F237BDAA36C6B3397F /* MBProgressHUD */;
-			targetProxy = 9A028E7AAF54618D2E0AE09C4B37C0BD /* PBXContainerItemProxy */;
-		};
-		74A0973EDA427EB9C893D27B39F1CCD1 /* PBXTargetDependency */ = {
+		50F95D027992200EECF880D4F0CD27DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WYPopoverController;
 			target = 95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */;
-			targetProxy = D96826EAF9E167065766DAFD6DFEDABD /* PBXContainerItemProxy */;
+			targetProxy = EB00E052F37C011E97A50EFBA5A61279 /* PBXContainerItemProxy */;
 		};
-		979EF5DEA02B58F322F95D104928F9C6 /* PBXTargetDependency */ = {
+		68A846023EF357D00C54501ED274DAC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = C16B573CFBA3483B0BED618DB9E0444A /* MBProgressHUD */;
+			targetProxy = F40E5605CE664D26538D2C7AA8352B83 /* PBXContainerItemProxy */;
+		};
+		8B8FC0EBB8ED4F504CAA136DBFA30F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYPopoverController;
+			target = 95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */;
+			targetProxy = B33BC547556E2AAE9E2B7E2E1D2D43E3 /* PBXContainerItemProxy */;
+		};
+		D3E1BAE26FE708C0D6A19011B3D59D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RYTSketchView;
+			target = 4395E2DE84D3099DCA6526B0EE1748EE /* RYTSketchView */;
+			targetProxy = 08DFCA9808B754C6D6A3B193BB504C37 /* PBXContainerItemProxy */;
+		};
+		D5AEA0A3C485477995A1239816686B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYPopoverController;
+			target = 95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */;
+			targetProxy = 241FAB9336EFF8CF39B52010C5C036CE /* PBXContainerItemProxy */;
+		};
+		DADA6281B475FEF67A237E51B9278889 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RYTSketchView-RYTSketchView";
 			target = 2B112CEBC317CEBA480E031B6BA8EA1C /* RYTSketchView-RYTSketchView */;
-			targetProxy = EB7D5DF01E11496B0C097BC38A6CBE0B /* PBXContainerItemProxy */;
-		};
-		B1D6C022D4BF346E8E3CE4B90C022A64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WYPopoverController;
-			target = 95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */;
-			targetProxy = 29D19B0631F96B627C39E14A2288CD21 /* PBXContainerItemProxy */;
-		};
-		B774CC8E92B7977EF437FE093B2B0580 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RYTSketchView;
-			target = 1E976D4CFE0172F2B420632647E2ADC6 /* RYTSketchView */;
-			targetProxy = 1D2ED02C62B3814B6D7FD448B969ABEC /* PBXContainerItemProxy */;
-		};
-		BD6884287EB50AF764A30761CCF14D15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor+Hex";
-			target = 1619CFBD9DAAE6541050C4A739556211 /* UIColor+Hex */;
-			targetProxy = 0DD8FDC1AD4CBFAD6FD67830640C3502 /* PBXContainerItemProxy */;
-		};
-		D02F087B9EF11687357BF87AC76BF4E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor+Hex";
-			target = 1619CFBD9DAAE6541050C4A739556211 /* UIColor+Hex */;
-			targetProxy = 34B39F808028F848796448610B3F66E7 /* PBXContainerItemProxy */;
-		};
-		DA273481D0C9B3E823B91E0AA29D26F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WYPopoverController;
-			target = 95D27AC3390D72D23D2BB3AB46F0A17A /* WYPopoverController */;
-			targetProxy = 9B2A7D3A3C79CBA0518FC98742371610 /* PBXContainerItemProxy */;
-		};
-		FADA7A10F277F2B35028A74BA6F5AAC2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RYTSketchView;
-			target = 1E976D4CFE0172F2B420632647E2ADC6 /* RYTSketchView */;
-			targetProxy = E33A2FA318278DB1B209E457A4C4E609 /* PBXContainerItemProxy */;
+			targetProxy = 63F5A1607C862AB8E0B97F63681A11B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0262637238B355FE7BD4991D319C9289 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0D42B7AAD034CC4B6383B4FDAF76BB0 /* Pods-RYTSketchView_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RYTSketchView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		052A17875CB827423D627183396CEB60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1164,33 +995,6 @@
 			};
 			name = Debug;
 		};
-		0B0584E6D92DEC893CAB58DA837AE7FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88103536262FFEA96391074E8CD1476A /* UIColor+Hex-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor+Hex/UIColor+Hex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor+Hex/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor+Hex/UIColor+Hex.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_Hex;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0CFB143869E4AF8B4F271679FF37BB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EE256E5A267F1038018A0F624205B5B /* WYPopoverController-Private.xcconfig */;
@@ -1218,7 +1022,36 @@
 			};
 			name = Release;
 		};
-		34698A11F96798148B4CC0277601DB36 /* Debug */ = {
+		19ABB773C2E764C5CD30A84FDA2CCC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B03339D910EFA39F0998D0F42CC1F0B /* Pods-RYTSketchView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RYTSketchView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31D4D32B21D2EF5580DCEA997F54E938 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */;
 			buildSettings = {
@@ -1245,9 +1078,104 @@
 			};
 			name = Debug;
 		};
-		6288F551E4E7D5AC1E894AECD21AA1FF /* Debug */ = {
+		31FB0F8E8FCBD3D97704794C17FE4E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB93191E94AA17069D348B06C73B661 /* MBProgressHUD-Private.xcconfig */;
+			baseConfigurationReference = 6BAABCB250DB7944264046D09C6095DC /* Pods-RYTSketchView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RYTSketchView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4052100EB71DB921E040B28DE62F35E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368D2DC392F84E893A4557AE01120E8A /* MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.9.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.9.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63DFDC93180CDE6EB952D8FF1039DA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RYTSketchView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		80507FAAD75E1E9C6E8966AA6B883804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RYTSketchView/RYTSketchView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RYTSketchView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RYTSketchView/RYTSketchView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RYTSketchView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B0BC295D3F3965F856DA8EA0D0D28A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368D2DC392F84E893A4557AE01120E8A /* MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.9.1;
@@ -1272,75 +1200,9 @@
 			};
 			name = Debug;
 		};
-		63DFDC93180CDE6EB952D8FF1039DA0D /* Release */ = {
+		AD7FC5F6790032B31847D6991ABAAEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RYTSketchView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		7569BBF3A04BE7DEF460D60C6453E318 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88103536262FFEA96391074E8CD1476A /* UIColor+Hex-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor+Hex/UIColor+Hex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor+Hex/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor+Hex/UIColor+Hex.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		76503B558EE869EB3AEB4BF839CF0961 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB93191E94AA17069D348B06C73B661 /* MBProgressHUD-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.9.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.9.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A02C909E6B4C83F601A1ABC692D02BF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14F771BAB71F63138F38A9B8861B2648 /* Pods-RYTSketchView_Tests.debug.xcconfig */;
+			baseConfigurationReference = C16B80F14041F60954B98A21E0C986EE /* Pods-RYTSketchView_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1349,16 +1211,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RYTSketchView_Tests;
+				PRODUCT_NAME = Pods_RYTSketchView_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1406,64 +1268,6 @@
 			};
 			name = Debug;
 		};
-		B4BFD42410E6B87702E72F578BF055E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA5BC780782491F6456B5600BCB9DC53 /* Pods-RYTSketchView_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RYTSketchView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BB8977BE566F22DA0BE5E6DE40C63380 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A28CC7A0866B0A14665F16CEC9057CF3 /* Pods-RYTSketchView_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RYTSketchView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F6FB4EE5248F25741A3EA2BAAB7605E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EE256E5A267F1038018A0F624205B5B /* WYPopoverController-Private.xcconfig */;
@@ -1491,25 +1295,27 @@
 			};
 			name = Debug;
 		};
-		F9C839C008C8EF4F7D25B5DAB7B431B8 /* Release */ = {
+		FC47E028E6B231C12B5E2BEDDA17406B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2A688B4AC778CC72F163474061FDCFF /* RYTSketchView-Private.xcconfig */;
+			baseConfigurationReference = E88B01D2ED0A6E0762E7BF1BC3028ED4 /* Pods-RYTSketchView_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RYTSketchView/RYTSketchView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RYTSketchView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RYTSketchView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RYTSketchView/RYTSketchView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RYTSketchView;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RYTSketchView_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1521,11 +1327,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AC5E01F531B71FF2A4AC38766175120 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Tests" */ = {
+		190B6163E092BE61D7BFEB225B689BA4 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A02C909E6B4C83F601A1ABC692D02BF4 /* Debug */,
-				0262637238B355FE7BD4991D319C9289 /* Release */,
+				31FB0F8E8FCBD3D97704794C17FE4E62 /* Debug */,
+				19ABB773C2E764C5CD30A84FDA2CCC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1539,20 +1345,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5683EF8A650F65301C71D44CD363010A /* Build configuration list for PBXNativeTarget "UIColor+Hex" */ = {
+		5019BB714C29FB59F8A17AAC61F34EE2 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B0584E6D92DEC893CAB58DA837AE7FB /* Debug */,
-				7569BBF3A04BE7DEF460D60C6453E318 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5816FE47263C13ABE2887D00E6EE63F7 /* Build configuration list for PBXNativeTarget "RYTSketchView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				34698A11F96798148B4CC0277601DB36 /* Debug */,
-				F9C839C008C8EF4F7D25B5DAB7B431B8 /* Release */,
+				AD7FC5F6790032B31847D6991ABAAEC1 /* Debug */,
+				FC47E028E6B231C12B5E2BEDDA17406B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1566,20 +1363,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F3E34B6C6BEBC785D22F84EE9575C81 /* Build configuration list for PBXNativeTarget "Pods-RYTSketchView_Example" */ = {
+		8C5735977A3ED8301CD112B3B19DAF60 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4BFD42410E6B87702E72F578BF055E6 /* Debug */,
-				BB8977BE566F22DA0BE5E6DE40C63380 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8C3DAE2555FC22500E312EE041B18701 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6288F551E4E7D5AC1E894AECD21AA1FF /* Debug */,
-				76503B558EE869EB3AEB4BF839CF0961 /* Release */,
+				8B0BC295D3F3965F856DA8EA0D0D28A8 /* Debug */,
+				4052100EB71DB921E040B28DE62F35E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1589,6 +1377,15 @@
 			buildConfigurations = (
 				071B088371DC24384A5241798E3F133D /* Debug */,
 				63DFDC93180CDE6EB952D8FF1039DA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0FDB02524E8A21A092CFB38CB9453DD /* Build configuration list for PBXNativeTarget "RYTSketchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D4D32B21D2EF5580DCEA997F54E938 /* Debug */,
+				80507FAAD75E1E9C6E8966AA6B883804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

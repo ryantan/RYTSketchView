@@ -73,12 +73,11 @@
     //Init scroll view
     CGRect scrollFrame;
     //scrollFrame = CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_HEIGHT);
-    scrollFrame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+    scrollFrame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 48);
     NSLog(@"scrollFrame=%@", NSStringFromCGRect(scrollFrame));
     
     _scrollView = [[UIScrollView alloc] initWithFrame:scrollFrame];
     _scrollView.delegate = self;
-    _scrollView.tag = 836913;
     _scrollView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
     _scrollView.pagingEnabled = NO; //do not snap to multiples of ZoomScale and position
     _scrollView.scrollEnabled = FALSE; // Diable one-finger scrolling
@@ -90,6 +89,7 @@
     CGRect sketchFrame = (CGRect){
         .origin = CGPointZero,
         .size = scrollFrame.size
+        //.size = CGSizeMake(scrollFrame.size.width  * 2, scrollFrame.size.height * 2)
     };
     sketchView = [[RYTSketchView alloc]initWithFrame:sketchFrame];
     sketchView.delegate = self;
@@ -100,8 +100,12 @@
     if (sketchView.zoomEnabled){
         _scrollView.showsHorizontalScrollIndicator = TRUE;
         _scrollView.showsVerticalScrollIndicator = TRUE;
+        
+        // Derive min and max zoom from zoomSlider.
         _scrollView.minimumZoomScale = self.zoomSlider.minimumValue;
         _scrollView.maximumZoomScale = self.zoomSlider.maximumValue;
+        
+        // Set initial zoom.
         self.zoomSlider.value = 1.0;
     }
     
@@ -173,15 +177,17 @@
 }
 
 - (CGRect)centeredFrameForScrollView:(UIScrollView *)scroll andUIView:(UIView *)rView {
-    NSLog(@"centeredFrameForScrollView");
+    
     CGSize boundsSize = scroll.bounds.size;
     CGRect frameToCenter = rView.frame;
+    
     // center horizontally
     if (frameToCenter.size.width < boundsSize.width) {
         frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2;
     }else{
         frameToCenter.origin.x = 0;
     }
+    
     // center vertically
     if (frameToCenter.size.height < boundsSize.height) {
         frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height) / 2;
@@ -523,24 +529,11 @@
     Boolean isPortrait = UIInterfaceOrientationIsPortrait(orientation);
     NSLog(@"SketchViewController.layoutSubviewsCustomForOrientation, isPortrait = %@", (isPortrait?@"YES":@"NO"));
     
-    
     NSLog(@"BEFORE: sketchView.frame=%@", NSStringFromCGRect(sketchView.frame));
     
     BOOL keepOrientation = FALSE;
     
-    // Using scrollview
-    float zoomScale = 1.0;
-    
     // NOTE: sketchView frames doesn't change. The zoom of _scrollView does
-    
-    
-    /* Causes blurring.
-     if ([self isEditingWO]){
-     theSketchView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 911);
-     }else{
-     theSketchView.frame = CGRectMake(0, 0, 1210, 655);
-     }
-     */
     
     // For testing
     BOOL isEditingWO = NO;
@@ -549,24 +542,11 @@
     if (isPortrait){
      
         if (isEditingWO){
-     
             if (keepOrientation){
                 //Remove rotation (if it was applied)
                 sketchView.transform = CGAffineTransformIdentity;
             }
-     
-            //zoomScale = 1.0; //NSLog(@"zoomScale = %f", zoomScale);
-     
-        }else{
-            
-            // get the exact zoomScale by width ratio
-            zoomScale = SCREEN_WIDTH/1210.0;
-            
-            // get the exact zoomScale by height ratio
-            //CGFloat maxZoomScale = 891/655;
-     
         }
-        
      
         // TODO: Convert to relative value
         joystickView.center = CGPointMake(70, 838);
@@ -579,36 +559,22 @@
                 CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI_2);
                 sketchView.transform = transform;
                     //NOTE: Do not use UIVIew.frame after setting transform. It is undefined
-            }else{
-     
             }
-     
-            //zoomScale = SCREEN_HEIGHT/SCREEN_WIDTH; //NSLog(@"zoomScale = %f", zoomScale);
-            zoomScale = SCREEN_HEIGHT/1210.0;
-     
-        }else{
-            //zoomScale = 615.0/655.0; //this fits the height
-            zoomScale = SCREEN_HEIGHT/1210.0; //this fits the width
         }
         
         // TODO: Convert to relative value
         joystickView.center = CGPointMake(70, 579);
     }
     
-    NSLog(@"zoomScale = %f", zoomScale);
-    
     // init scrollView
-    _scrollView.contentSize = sketchView.bounds.size;
-    _scrollView.minimumZoomScale = zoomScale;
-    _scrollView.maximumZoomScale = zoomScale * (sketchView.zoomEnabled ? 4 : 1);
+    //_scrollView.contentSize = sketchView.bounds.size;
+    //_scrollView.minimumZoomScale = zoomScale;
+    //_scrollView.maximumZoomScale = zoomScale * (sketchView.zoomEnabled ? 4 : 1);
     
-    [_scrollView setZoomScale:zoomScale animated:TRUE];
-    [_scrollView setContentOffset:CGPointMake(0, 0) animated:TRUE];
+    //[_scrollView setZoomScale:zoomScale animated:TRUE];
+    //[_scrollView setContentOffset:CGPointMake(0, 0) animated:TRUE];
+    //NSLog(@"zoomScale = %f", zoomScale);
     
-    
-    NSLog(@"zoomScale = %f", zoomScale);
-     
-    //[self layoutOtherViews];
     [self zoomAccordingToSliderZoom];
     
     [joystickView resetJoystick];
@@ -629,10 +595,6 @@
         //}
         [recognizer setEnabled:NO];
     }
-    
-    // @TODO: Test
-    // Reset this here to test if affects blurring
-    //_scrollView.frame = CGRectMake(0, 50, 1024, 1024);
     
     // DEBUG:
     NSLog(@"sketchView.transform = %@", NSStringFromCGAffineTransform(sketchView.transform));
