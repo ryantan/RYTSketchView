@@ -12,17 +12,14 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A short description of RYTSketchView."
   s.description      = <<-DESC
-                       An optional longer description of RYTSketchView
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Allow users to draw in your app, with brush size and color options, undo and redo with history, zooming, erasing, area cut and pasting.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RYTSketchView"
+  s.homepage         = "https://github.com/ryantan/RYTSketchView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Ryan" => "ryan@redairship.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RYTSketchView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/ryantan/RYTSketchView.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/squall3d'
 
   s.platform     = :ios, '6.1'
   s.requires_arc = true

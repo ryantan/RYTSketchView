@@ -113,11 +113,16 @@ static UIImage *_clipboardContent = nil;
     return self;
 }
 
-- (void)initViewWithBufferWidth:(CGFloat)w bufferHeight:(CGFloat)h{
-    NSLog(@"initView");
+- (void)initView {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    [self initViewWithBufferWidth:width bufferHeight:height];
+}
+
+- (void)initViewWithBufferWidth:(CGFloat)width bufferHeight:(CGFloat)height {
     
-    _bufferWidth = w;
-    _bufferHeight = h;
+    _bufferWidth = width;
+    _bufferHeight = height;
     NSLog(@"_bufferWidth: %f, _bufferHeight: %f", _bufferWidth, _bufferHeight);
     
     // Setup layer
@@ -214,6 +219,10 @@ static UIImage *_clipboardContent = nil;
     
     [self releaseFlattened];
     [self setNeedsDisplay];
+}
+
+- (void)canvasWillReset {
+    
 }
 
 - (void)penToolSelected {
@@ -387,7 +396,7 @@ static UIImage *_clipboardContent = nil;
     
     if (_currentTool == RYTSketchToolTypePen || _currentTool == RYTSketchToolTypeEraser){
         // create and configure a new stroke
-        Stroke *stroke = [[Stroke alloc] init];
+        RYTStroke *stroke = [[RYTStroke alloc] init];
         [stroke setStrokeColor:_penColor]; // set stroke's stroke color
         [stroke setLineWidth:_lineWidth]; // set stroke's line width
         if  (_currentTool == RYTSketchToolTypeEraser){
@@ -516,7 +525,7 @@ static UIImage *_clipboardContent = nil;
             
             //NSLog(@"touchesMoved while in pen/eraser tool");
             
-            Stroke *stroke = [self getStrokeForTouch:touch];
+            RYTStroke *stroke = [self getStrokeForTouch:touch];
             
             if (stroke == nil){
                 //NSLog(@"touchesMoved: Got a new touchmove belonging to a stroke that was discarded, %@", touchKey);
@@ -651,7 +660,7 @@ static UIImage *_clipboardContent = nil;
             // retrieve the stroke for this touch using the key
             
             //Stroke *stroke = [strokes valueForKey:touchKey];
-            Stroke *stroke = [self getStrokeForTouch:touch];
+            RYTStroke *stroke = [self getStrokeForTouch:touch];
             
             if (stroke == nil){
                 //NSLog(@"touchesEnded: Got a new touchEnd belonging to a stroke that was discarded");
@@ -756,8 +765,8 @@ static UIImage *_clipboardContent = nil;
         
         // retrieve the stroke for this touch using the key
         //NSString *touchKey = [self getKeyFromTouch:touch];
-        //Stroke *stroke = [strokes valueForKey:touchKey];
-        Stroke *stroke = [self getStrokeForTouch:touch];
+        //RYTStroke *stroke = [strokes valueForKey:touchKey];
+        RYTStroke *stroke = [self getStrokeForTouch:touch];
         
         if (stroke == nil){
             //NSLog(@"touchesCancelled: Got a touchesCancelled belonging to a stroke that was discarded %@", touchKey);
@@ -810,12 +819,12 @@ static UIImage *_clipboardContent = nil;
 
 #pragma mark - Strokes management
 
-- (Stroke *)getStrokeForTouch:(UITouch *)touch{
+- (RYTStroke *)getStrokeForTouch:(UITouch *)touch{
     NSString *touchKey = [self getKeyFromTouch:touch];
-    return (Stroke*)[strokes valueForKey:touchKey];
+    return (RYTStroke*)[strokes valueForKey:touchKey];
 }
 
--(void)setStroke:(Stroke *)stroke forTouch:(UITouch *)touch{
+-(void)setStroke:(RYTStroke *)stroke forTouch:(UITouch *)touch{
     NSString *touchKey = [self getKeyFromTouch:touch];
     [strokes setValue:stroke forKey:touchKey];
 }
@@ -830,6 +839,7 @@ static UIImage *_clipboardContent = nil;
 #pragma mark - Graphics Related
 
 - (void)resetCanvas {
+    [self canvasWillReset];
     NSLog(@"SketchView.resetCanvas");
     [self clearSketchInternal];
     
@@ -996,14 +1006,14 @@ static UIImage *_clipboardContent = nil;
     // Draw all the finished strokes that are not yet in flattenedImage
     // into strokesContext.
     //NSLog(@"drawRectWithExtraContext, finishedStrokes.count = %lu", (unsigned long)finishedStrokes.count);
-    for (Stroke *stroke in finishedStrokes){
+    for (RYTStroke *stroke in finishedStrokes){
         [self drawStroke:stroke inContext:strokesContext];
     }
     
     // Draw all the currently active strokes into strokesContext.
     //NSLog(@"drawRectWithExtraContext, strokes.count = %lu", (unsigned long)strokes.count);
     for (NSString *key in strokes){
-        Stroke *stroke = [strokes valueForKey:key];
+        RYTStroke *stroke = [strokes valueForKey:key];
         [self drawStroke:stroke inContext:strokesContext];
     }
     
@@ -1024,8 +1034,8 @@ static UIImage *_clipboardContent = nil;
     
 }
 
-// Draws the given stroke into the given context
-- (void)drawStroke:(Stroke *)stroke inContext:(CGContextRef)context {
+// Draws the given stroke into the given context.
+- (void)drawStroke:(RYTStroke *)stroke inContext:(CGContextRef)context {
     
     if (stroke.ignored) return;
     
@@ -1137,7 +1147,7 @@ static UIImage *_clipboardContent = nil;
     //[RYTSketchViewUtils writeCGImage:CGBitmapContextCreateImage(context) toFileName:@"flatten-3.png"];
     
     // Draw strokes that have not yet been flattened into flattenedImage_.
-    for (Stroke *stroke in finishedStrokes) {
+    for (RYTStroke *stroke in finishedStrokes) {
         [self drawStroke:stroke inContext:context];
     }
     

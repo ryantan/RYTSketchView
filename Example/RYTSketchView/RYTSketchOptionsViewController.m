@@ -8,9 +8,6 @@
 
 #import "RYTSketchOptionsViewController.h"
 #import <RYTSketchView/RYTSketchView.h>
-#import "UIColor-Expanded.h"
-
-//#import "SketchViewController.h"
 
 @interface RYTSketchOptionsViewController () {
     UIButton *btnClear;
@@ -83,7 +80,8 @@
     [wrapper addSubview:btnCamera];
     [theView addSubview:wrapper];
     
-    theView.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    //theView.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    theView.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:205.0 alpha:1.0];
     
     self.view = theView;
 }

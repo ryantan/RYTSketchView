@@ -1,0 +1,6 @@
+framework module RYTSketchView {
+  umbrella header "RYTSketchView-umbrella.h"
+
+  export *
+  module * { export * }
+}

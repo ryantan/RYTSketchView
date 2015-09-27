@@ -158,7 +158,7 @@ CGContextRef CreateBitmapContext(NSUInteger w, NSUInteger h){
     return img;
 }
 
-+ (void)writeImage:(UIImage*)image toPath:(NSString*)path withFileName:(NSString*)name isRelativeToDocument:(BOOL)isRelativeToDocument{
++ (void)writeImage:(UIImage*)image toFileName:(NSString*)name withPath:(NSString*)path isRelativeToDocument:(BOOL)isRelativeToDocument{
     NSError *error;
     NSFileManager *fileMgr = [NSFileManager defaultManager];
     
@@ -200,7 +200,7 @@ CGContextRef CreateBitmapContext(NSUInteger w, NSUInteger h){
 
 + (void)writeCGImage:(CGImageRef)image toFileName:(NSString*)name withPath:(NSString*)path isRelativeToDocument:(BOOL)isRelativeToDocument {
     UIImage *imageToBeWritten = [UIImage imageWithCGImage:image];
-    [RYTSketchViewUtils writeImage:imageToBeWritten toPath:path withFileName:name isRelativeToDocument:isRelativeToDocument];
+    [RYTSketchViewUtils writeImage:imageToBeWritten toFileName:name withPath:path isRelativeToDocument:isRelativeToDocument];
 }
 
 + (void)writeCGContext:(CGContextRef)context toFileName:(NSString*)name {
@@ -213,7 +213,7 @@ CGContextRef CreateBitmapContext(NSUInteger w, NSUInteger h){
 
 + (void)writeCGContext:(CGContextRef)context toFileName:(NSString*)name withPath:(NSString*)path isRelativeToDocument:(BOOL)isRelativeToDocument {
     UIImage *imageToBeWritten = [RYTSketchViewUtils getUIImageFromCGContext:context];
-    [RYTSketchViewUtils writeImage:imageToBeWritten toPath:path withFileName:name isRelativeToDocument:isRelativeToDocument];
+    [RYTSketchViewUtils writeImage:imageToBeWritten toFileName:name withPath:path isRelativeToDocument:isRelativeToDocument];
 }
 
 

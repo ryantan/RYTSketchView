@@ -262,8 +262,8 @@
 
 - (void)handlePan:(CGPoint)p1 and:(CGPoint)p2 phase:(NSInteger)phase{
     
-    CGFloat centerX = (abs(p1.x+p2.x))/2;
-    CGFloat centerY = (abs(p1.y+p2.y))/2;
+    CGFloat centerX = (fabs(p1.x+p2.x))/2;
+    CGFloat centerY = (fabs(p1.y+p2.y))/2;
     CGPoint center = CGPointMake(centerX, centerY);
     
     if (phase == 1){

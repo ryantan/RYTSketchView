@@ -7,9 +7,8 @@
 //
 
 #import "RYTSketchPenOptionsViewController.h"
-//#import "SketchViewController.h"
+//#import <RYTSketchView/RYTSketchView.h>
 #import "RYTSketchView.h"
-#import "UIColor-Expanded.h"
 
 @interface RYTSketchPenOptionsViewController () {
     UIButton *btnThick1;
@@ -95,8 +94,8 @@
     [wrapper addSubview:btnMarqueeTool];
     
     [theView addSubview:wrapper];
-    
-    theView.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    //theView.backgroundColor = [UIColor colorWithRGBHex:0xfffefa];
+    theView.backgroundColor = [UIColor colorWithRed:255.0 green:254.0 blue:250.0 alpha:1.0];
     
     self.view = theView;
 }
@@ -215,14 +214,6 @@
 }
 
 - (void)dismissPopover {
-    //[self.sketchViewController performSelector:@selector(dismissAllPopovers) withObject:Nil afterDelay:0.2];
-    //[self.sketchViewController dismissAllPopovers];
-    
-    // TODO: Clean
-    /*if ([self.parentViewController isKindOfClass:[UIPopoverController class]]){
-        UIPopoverController *pc = (UIPopoverController *)self.parentViewController;
-        [pc dismissPopoverAnimated:YES];
-    }*/
     
     if (self.popoverController){
         [self.popoverController dismissPopoverAnimated:YES];

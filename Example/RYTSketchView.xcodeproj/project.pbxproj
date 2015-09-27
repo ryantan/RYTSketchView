@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3281016ED0B9589F37D30E70 /* Pods_RYTSketchView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCE9DD8139C74D18D7B6FC7 /* Pods_RYTSketchView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,13 +21,11 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		7A99620A760C5DA47150FE9D /* Pods_RYTSketchView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EC0E2DBF46FF24CE212790 /* Pods_RYTSketchView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		75DD43BB36FD675E85333F7A /* Pods_RYTSketchView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7123620703A7AD99C429CF /* Pods_RYTSketchView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		940C56761B353E5800C430FA /* SketchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940C56741B353E5800C430FA /* SketchViewController.xib */; };
 		940C56791B35566500C430FA /* RYTSketchOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */; };
 		940C56AA1B3575F200C430FA /* RYTSketchPenOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */; };
 		940C56EC1B363B8C00C430FA /* UIView+printSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */; };
-		B65D1B92084E24088828D9BE /* Pods_RYTSketchView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A9311D61FB7E3F0BF21625 /* Pods_RYTSketchView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +63,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		62DA5FB76963ACBFDE0F7AAB /* Pods-RYTSketchView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		66C1F09873E19C2088B7E37B /* Pods-RYTSketchView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		68A9311D61FB7E3F0BF21625 /* Pods_RYTSketchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81EC0E2DBF46FF24CE212790 /* Pods_RYTSketchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7123620703A7AD99C429CF /* Pods_RYTSketchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		940C56721B353E5800C430FA /* SketchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewController.h; sourceTree = "<group>"; };
-		940C56731B353E5800C430FA /* SketchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewController.m; sourceTree = "<group>"; };
-		940C56741B353E5800C430FA /* SketchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SketchViewController.xib; sourceTree = "<group>"; };
 		940C56771B35566500C430FA /* RYTSketchOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchOptionsViewController.h; sourceTree = "<group>"; };
 		940C56781B35566500C430FA /* RYTSketchOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTSketchOptionsViewController.m; sourceTree = "<group>"; };
 		940C56A81B3575F200C430FA /* RYTSketchPenOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTSketchPenOptionsViewController.h; sourceTree = "<group>"; };
@@ -78,7 +73,9 @@
 		940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+printSubviews.h"; sourceTree = "<group>"; };
 		940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+printSubviews.m"; sourceTree = "<group>"; };
 		98354C1EB2A3D8672DFC9181 /* RYTSketchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RYTSketchView.podspec; path = ../RYTSketchView.podspec; sourceTree = "<group>"; };
+		D1EC269CFB3AB2E2877DB4CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYTSketchView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FCCE9DD8139C74D18D7B6FC7 /* Pods_RYTSketchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYTSketchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +86,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B65D1B92084E24088828D9BE /* Pods_RYTSketchView_Example.framework in Frameworks */,
+				3281016ED0B9589F37D30E70 /* Pods_RYTSketchView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +97,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				7A99620A760C5DA47150FE9D /* Pods_RYTSketchView_Tests.framework in Frameworks */,
+				75DD43BB36FD675E85333F7A /* Pods_RYTSketchView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +132,9 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				68A9311D61FB7E3F0BF21625 /* Pods_RYTSketchView_Example.framework */,
-				81EC0E2DBF46FF24CE212790 /* Pods_RYTSketchView_Tests.framework */,
+				D1EC269CFB3AB2E2877DB4CF /* Pods.framework */,
+				FCCE9DD8139C74D18D7B6FC7 /* Pods_RYTSketchView_Example.framework */,
+				6D7123620703A7AD99C429CF /* Pods_RYTSketchView_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,9 +154,6 @@
 				940C56A91B3575F200C430FA /* RYTSketchPenOptionsViewController.m */,
 				6003F5A5195388D20070C39A /* RYTViewController.h */,
 				6003F5A6195388D20070C39A /* RYTViewController.m */,
-				940C56721B353E5800C430FA /* SketchViewController.h */,
-				940C56731B353E5800C430FA /* SketchViewController.m */,
-				940C56741B353E5800C430FA /* SketchViewController.xib */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				940C56EA1B363B8C00C430FA /* UIView+printSubviews.h */,
 				940C56EB1B363B8C00C430FA /* UIView+printSubviews.m */,
@@ -236,8 +231,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				10435F9C29E1B242D207424F /* Embed Pods Frameworks */,
 				8F4C2704BF8F85885AF22F6E /* Copy Pods Resources */,
+				B432FA8F02DB92CE0F401FAB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,8 +251,8 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				DDA6889962EA679149DFA75E /* Embed Pods Frameworks */,
 				41B86D87884D0E61E18383BC /* Copy Pods Resources */,
+				984B82BAD143EF50AA57461B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,7 +271,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RYT;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Ryan;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -310,7 +305,6 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				940C56761B353E5800C430FA /* SketchViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,21 +320,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10435F9C29E1B242D207424F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		276AA0B043658A89F4DABDBB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,7 +380,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDA6889962EA679149DFA75E /* Embed Pods Frameworks */ = {
+		984B82BAD143EF50AA57461B /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +393,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RYTSketchView_Tests/Pods-RYTSketchView_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B432FA8F02DB92CE0F401FAB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RYTSketchView_Example/Pods-RYTSketchView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -503,9 +497,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -540,6 +535,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -547,7 +543,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66C1F09873E19C2088B7E37B /* Pods-RYTSketchView_Example.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -565,7 +560,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED864EE352BA525102524373 /* Pods-RYTSketchView_Example.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

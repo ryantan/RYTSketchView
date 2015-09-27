@@ -1,6 +1,0 @@
-framework module RYTSketchView {
-  umbrella header "Pods-RYTSketchView_Example-RYTSketchView-umbrella.h"
-
-  export *
-  module * { export * }
-}

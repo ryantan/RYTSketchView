@@ -13,17 +13,7 @@
 @protocol RYTSketchViewControllerDelegate <NSObject>
 
 - (RYTSketchView *)sketchView;
-- (void)showCustomerSelectorAsFirstStep:(BOOL)asFirstStep;
-- (void)showTemplateSelector;
-- (void)showTemplateSelectorByTemplateCategory:(NSString*)templateCategory withSelectMode:(NSUInteger)selectMode;
-- (void)waitAndShowTemplateSelector;
-- (void)pushTemplateSelectorToModalNav;
 - (void)dismissAllPopovers;
-
-- (void)hideSketchToolBar;
-- (void)showSketchToolBar;
-
-- (void)dismissMeasurementPanel2;
 
 - (void)reloadOptionButtons;
 

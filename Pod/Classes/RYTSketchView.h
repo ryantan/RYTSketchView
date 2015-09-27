@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Stroke.h"
+#import "RYTStroke.h"
 
 // TODO: Deprecate
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
@@ -47,9 +47,9 @@ typedef enum {
 @property (nonatomic, assign) NSInteger maxHistoryStates;
 @property (nonatomic, assign) BOOL joystickEnabled;
 
-
-
 - (void)initView;
+- (void)initViewWithBufferWidth:(CGFloat)width bufferHeight:(CGFloat)height;
+
 - (void)viewWillAppear;
 - (void)clearSketch; // clear all strokes from the view
 - (void)clearSketchInternal;
@@ -64,25 +64,20 @@ typedef enum {
 - (void)marqueeToolSelected;
 
 
-
-//Touch related
+#pragma mark - Touch related
 //- (UITouch*)filterTouches:(NSArray*)array;
 - (NSString*)getKeyFromTouch:(UITouch*)touch;
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer;
 
 
-
-//Strokes management
-- (Stroke*)getStrokeForTouch:(UITouch*)touch;
-- (void)setStroke:(Stroke*)stroke forTouch:(UITouch*)touch;
+#pragma mark - Strokes management
+- (RYTStroke*)getStrokeForTouch:(UITouch*)touch;
+- (void)setStroke:(RYTStroke*)stroke forTouch:(UITouch*)touch;
 - (void)removeStrokeByTouch:(UITouch*)touch;
 
 
-
-//Graphics Related
-- (void)drawRectWithExtraContext:(CGRect)rect;
-// draw the given Stroke into the given graphics context
-- (void)drawStroke:(Stroke *)Stroke inContext:(CGContextRef)context;
+#pragma mark - Graphics Related
+- (void)drawStroke:(RYTStroke *)Stroke inContext:(CGContextRef)context;
 - (void)flatten; //draw all paths into bitmap context
 - (UIImage *)getUIImage;
 - (UIImage *)getThumbnail;
@@ -90,14 +85,12 @@ typedef enum {
 - (void)setTemplate:(UIImage*)template;
 
 
-
-//Pen options
+#pragma mark - Pen options
 - (void)setPenThickness:(NSInteger)thickness;
 - (NSInteger)getPenThickness;
 
 
-
-//Undo Redo
+#pragma mark - Undo Redo
 - (void)saveHistory;
 - (void)purgeHistoryAfterCursor;
 - (void)goToHistoryCursor;
@@ -106,7 +99,7 @@ typedef enum {
 - (void)purgeAllHistory;
 
 
-// Clipboard
+#pragma mark -  Clipboard
 - (void)setClipboardContent;
 - (void)setClipboardContent:(UIImage*)clipboardContent;
 - (UIImage*)clipboardContent;
@@ -115,7 +108,7 @@ typedef enum {
 - (BOOL)hasClipboardImage;
 
 
-//Marquee related
+#pragma mark - Marquee related
 - (void)drawMarqueeSourceRectWithAlpha:(CGFloat)alpha inContext:(CGContextRef)context;
 - (CGRect)getRectFromMarqueePoints;
 - (void)cutOutMarquee;

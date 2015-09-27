@@ -7,7 +7,6 @@
 //
 
 #import "RYTPenOptionsViewController.h"
-#import "SketchViewController.h"
 #import "RYTSketchView.h"
 #import "UIColor-Expanded.h"
 
@@ -158,7 +157,7 @@
         NSLog(@"Error: PenOptionsViewController, sketchView is not set!");
     }
     
-    [self.sketchViewController performSelector:@selector(dismissAllPopovers) withObject:Nil afterDelay:0.2];
+    //[self.sketchViewController performSelector:@selector(dismissAllPopovers) withObject:Nil afterDelay:0.2];
     //[self.sketchViewController dismissAllPopovers];
 }
 
@@ -182,14 +181,14 @@
         NSLog(@"Error: PenOptionsViewController, sketchView is not set!");
     }
     
-    [self.sketchViewController performSelector:@selector(dismissAllPopovers) withObject:Nil afterDelay:0.2];
+    //[self.sketchViewController performSelector:@selector(dismissAllPopovers) withObject:Nil afterDelay:0.2];
     //[self.sketchViewController dismissAllPopovers];
 }
 
 - (void)marqueeToolTapped:(id)sender{
     NSLog(@"marqueeToolTapped in PenOptionsViewController!");
     [self.sketchView marqueeToolSelected];
-    [self.sketchViewController dismissAllPopovers];
+    //[self.sketchViewController dismissAllPopovers];
 }
 
 - (UIButton*)makeColorButtonWithTag:(NSInteger)tag imageName:(NSString*)imageName{
